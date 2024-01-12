@@ -1,8 +1,6 @@
 name: build and deploy GitHub page
 
 on:
-  push:
-    branches: [ "feature/my-website" ]
   pull_request:
     branches: [ "main" ]
 
@@ -20,7 +18,7 @@ jobs:
       - name: create env file
         run: |
           touch .env
-          echo BASE_PATH="/my-website" >> .env
+          echo BASE_PATH="/" >> .env
 
       - name: Build
         run: |
