@@ -1,6 +1,8 @@
 name: build and deploy GitHub page
 
 on:
+  push:
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
