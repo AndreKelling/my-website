@@ -18,7 +18,7 @@ jobs:
       - name: create env file
         run: |
           touch .env
-          echo BASE_PATH="/" >> .env
+          echo BASE_PATH="" >> .env
 
       - name: Build
         run: |
