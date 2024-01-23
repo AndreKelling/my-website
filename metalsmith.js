@@ -105,7 +105,7 @@ Metalsmith(__dirname)
     basePath,
     imagePath: basePath + "/assets/images/",
     faviconHash: "QEMO20KRr9",
-    styleHash: "20231220",
+    styleHash: "20240123",
     scriptHash: "20231220",
     svgSymbols: loadSvgSymbols(),
     criticalCss: loadCriticalCss(),

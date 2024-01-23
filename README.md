@@ -49,6 +49,10 @@ To create a critical CSS it is necessary here that we have a website built and r
 
 After that it is necessary to build the site again.
 
+### assets version bump
+
+CSS and JS files are versioned by a query param configured in the metalsmith config / build file.
+
 ## Lint
 
 - `npm run lint`
