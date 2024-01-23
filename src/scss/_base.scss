@@ -26,37 +26,11 @@ p {
 
 a {
 	color: $c-green;
-	text-decoration: none;
 	transition: color 200ms ease-in;
 
 	&:hover,
 	&:focus {
 		color: $c-orange;
-		text-decoration: none;
-
-		&.linkedin i {
-			color: #0061A2;
-		}
-
-		&.xing i {
-			color: #126567;
-		}
-
-		&.twitter i {
-			color: #48A0EC;
-		}
-
-		&.github i {
-			color: #171515;
-		}
-
-		&.stackoverflow i {
-			color: #BCBBBB;
-		}
-
-		&.instagram i {
-			color: #FFF;
-		}
 	}
 }
 
