@@ -1,6 +1,6 @@
 ---
 layout: about-page.njk
-date: 2024-01-09 09:18:01
+date: 2024-03-11 09:27:01
 createdAt: 2010-10-26 04:39:33
 
 title: "& about me?"
@@ -18,6 +18,10 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 <h2>Vita:</h2>
 
 <ul>
+  <li>since Feb. 2024</li>
+	<li>Interim Angular Development</li>
+	<li><a href="https://qualityminds.com/" rel="noreferrer noopener" target="_blank" title="qualityminds.com website">QualityMinds GmbH</a></li>
+	<li>Remote</li>
 	<li>Mar. 2023 — Okt. 2023</li>
 	<li>Interim Java Development</li>
 	<li><a href="https://www.testberichte.de/" rel="noreferrer noopener" target="_blank" title="Testberichte.de website">Testberichte.de</a></li>
