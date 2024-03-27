@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+
+{% block body %}
+  <div class="wrapper {{ wrapperClass }}">
+    <h1>{{ seo.title }}</h1>
+    {% if seo.description %}
+      <h2>{{ seo.description }}</h2>
+    {% endif %}
+
+    {% set maxWhatireadItems = 99 %}
+    {% include "partials/whatiread-list.njk" %}
+
+    {{ contents | safe }}
+  </div>
+{% endblock %}

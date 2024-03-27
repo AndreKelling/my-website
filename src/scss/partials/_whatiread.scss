@@ -1,0 +1,22 @@
+.whatiread {
+	margin-top: 30px;
+	padding-top: 40px;
+	border-top: 1px dashed $c-darkgreen;
+
+	> * {
+		display: block;
+		max-width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+	}
+
+	&__title {
+		font-size: 20px;
+	}
+
+	&__list {
+		max-width: 500px;
+		margin-bottom: 20px;
+	}
+}

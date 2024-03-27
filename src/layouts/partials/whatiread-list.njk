@@ -1,0 +1,13 @@
+<ul>
+  {% for item in whatiread.list %}
+    {% if item.text and loop.index <= maxWhatireadItems %}
+      <li class="item-{{ loop.index }}">
+        <a href="{{ item.url }}" title="onwards to the article" target="_blank" rel="nofollow">{{ item.text }}</a>
+
+        {% if item.appendix %}
+          &mdash; {{ item.appendix }}
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

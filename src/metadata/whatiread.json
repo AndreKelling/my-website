@@ -1,0 +1,29 @@
+{
+  "list": [
+    {
+      "text": "About the internet and slow devices",
+      "url": "https://danluu.com/slow-device/",
+      "appendix": "from Dan Luu"
+    },
+    {
+      "text": "About the new GPT-4.5 Turbo from OpenAI",
+      "url": "https://the-decoder.de/openais-gpt-4-5-turbo-ist-durchgesickert-und-koennte-im-juni-starten/",
+      "appendix": "from The Decoder"
+    },
+    {
+      "text": "About JSDoc for Typing JS without TypeScript",
+      "url": "https://alexharri.com/blog/jsdoc-as-an-alternative-typescript-syntax?ck_subscriber_id=2442841568",
+      "appendix": "from Alex Harri"
+    },
+    {
+      "text": "A comparison about CSS modules and CSS in JS",
+      "url": "https://dev.to/alexsergey/css-modules-vs-css-in-js-who-wins-3n25",
+      "appendix": "from Alex Sergey"
+    },
+    {
+      "text": "About how a Bloom Filter is working",
+      "url": "https://samwho.dev/bloom-filters",
+      "appendix": "from samwho"
+    }
+  ]
+}

@@ -23,6 +23,11 @@
 	overflow: hidden;
 	transition: padding 300ms ease-in-out, opacity 400ms cubic-bezier(.86, 0, .07, 1) 300ms;
 
+	.homepage &,
+	.about-page & {
+		margin: 0 0 30px;
+	}
+
  // easeInOutQuint
 	&.fader {
 		transition: padding 300ms ease-in-out;

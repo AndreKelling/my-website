@@ -117,7 +117,8 @@ Metalsmith(__dirname)
   .use(
     metadata({
       site: "src/metadata/site.json",
-      nav: "src/metadata/navigation.json"
+      nav: "src/metadata/navigation.json",
+      whatiread: "src/metadata/whatiread.json"
     })
   )
   .use(markdown())

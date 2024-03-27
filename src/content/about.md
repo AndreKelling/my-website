@@ -1,8 +1,9 @@
 ---
 layout: about-page.njk
-date: 2024-01-09 09:18:01
+date: 2024-03-27 17:02:22
 createdAt: 2010-10-26 04:39:33
 
+bodyClass: "about-page"
 title: "& about me?"
 subtitle: "Check me up also on <a href='https://www.xing.com/profile/Andre_Kelling' rel='noreferrer noopener' target='_blank' title='me on Xing'>Xing</a> and <a href='https://www.linkedin.com/in/andr%C3%A9-kelling/' rel='noreferrer noopener' target='_blank' title='me on LinkedIn'>LinkedIn</a> networks"  
   
@@ -79,9 +80,9 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 	<li class="per40">Python</li>
 	<li class="per50">--</li>
 	<li class="per70">CSS</li>
+  <li class="per80">Angular</li>
 	<li class="per60">React</li>
 	<li class="per60">Vue</li>
-	<li class="per80">Angular</li>
 	<li class="per50">Svelte</li>
 	<li class="per60">jQuery</li>
 </ul>
