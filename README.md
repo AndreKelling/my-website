@@ -51,7 +51,7 @@ After that it is necessary to build the site again.
 
 ### assets version bump
 
-CSS and JS files are versioned by a query param configured in the metalsmith config / build file.
+CSS and JS files are versioned by a query param configured in the metalsmith config / build file with `styleVersion` or `styleVersion`.
 
 ## Lint
 
