@@ -1,6 +1,11 @@
 {
   "list": [
     {
+      "text": "Why TypeScript doesn't include a throws keyword",
+      "url": "https://www.learningtypescript.com/articles/why-typescript-doesnt-include-a-throws-keyword",
+      "appendix": "from Josh Goldberg"
+    },
+    {
       "text": "About the internet and slow devices",
       "url": "https://danluu.com/slow-device/",
       "appendix": "from Dan Luu"
