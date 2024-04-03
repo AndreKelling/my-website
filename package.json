@@ -39,7 +39,7 @@
     "@metalsmith/permalinks": "^2.5.1",
     "autoprefixer": "^10.4.16",
     "babelify": "^10.0.0",
-    "browser-sync": "^2.29.3",
+    "browser-sync": "^3.0.2",
     "browserify": "^17.0.0",
     "cross-env": "^7.0.3",
     "cssnano": "^6.0.1",
