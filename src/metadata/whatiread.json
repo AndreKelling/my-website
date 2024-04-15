@@ -1,6 +1,10 @@
 {
   "list": [
     {
+      "text": "The quiet, pervasive devaluation of frontend",
+      "url": "https://joshcollinsworth.com/blog/devaluing-frontend",
+      "appendix": "from Josh Collinsworth"
+    },{
       "text": "Why TypeScript doesn't include a throws keyword",
       "url": "https://www.learningtypescript.com/articles/why-typescript-doesnt-include-a-throws-keyword",
       "appendix": "from Josh Goldberg"
