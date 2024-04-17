@@ -1,6 +1,11 @@
 {
   "list": [
     {
+      "text": "About continuously checked and monitored accessibility",
+      "url": "https://continuousaccessibility.com/",
+      "appendix": "from Melanie Sumner"
+    },
+    {
       "text": "The quiet, pervasive devaluation of frontend",
       "url": "https://joshcollinsworth.com/blog/devaluing-frontend",
       "appendix": "from Josh Collinsworth"
