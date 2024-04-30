@@ -1,6 +1,11 @@
 {
   "list": [
     {
+      "text": "About latency numbers in frontend",
+      "url": "https://vercel.com/blog/latency-numbers-every-web-developer-should-know",
+      "appendix": "from Malte Ubl"
+    },
+    {
       "text": "About continuously checked and monitored accessibility",
       "url": "https://continuousaccessibility.com/",
       "appendix": "from Melanie Sumner"
