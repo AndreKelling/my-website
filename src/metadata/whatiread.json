@@ -1,6 +1,16 @@
 {
   "list": [
     {
+      "text": "How to use ffmpeg cli",
+      "url": "https://www.sawyer.soy/blog/create-looping-videos-with-ffmpeg",
+      "appendix": "from Sawyer Hollenshead"
+    },
+    {
+      "text": "That CSS is impossible to master",
+      "url": "https://shubhamjain.co/2024/02/19/css-impossible-thats-okay/",
+      "appendix": "from Shubham Jain"
+    },
+    {
       "text": "About latency numbers in frontend",
       "url": "https://vercel.com/blog/latency-numbers-every-web-developer-should-know",
       "appendix": "from Malte Ubl"
