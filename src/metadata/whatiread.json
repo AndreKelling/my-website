@@ -1,6 +1,11 @@
 {
   "list": [
     {
+      "text": "About JS globals and web history with MooTools",
+      "url": "https://kettanaito.com/blog/why-patching-globals-is-harmful",
+      "appendix": "from Artem Zakharchenko"
+    },
+    {
       "text": "How to use ffmpeg cli",
       "url": "https://www.sawyer.soy/blog/create-looping-videos-with-ffmpeg",
       "appendix": "from Sawyer Hollenshead"
