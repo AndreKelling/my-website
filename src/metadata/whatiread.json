@@ -1,6 +1,16 @@
 {
   "list": [
     {
+      "text": "How long user stay on a web-page and what is Weibull distribution?",
+      "url": "https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/",
+      "appendix": "from Jakob Nielsen"
+    },
+    {
+      "text": "About UI Density - in general a nice UI article",
+      "url": "https://matthewstrom.com/writing/ui-density/",
+      "appendix": "from Matthew Ström"
+    },
+    {
       "text": "About JS globals and web history with MooTools",
       "url": "https://kettanaito.com/blog/why-patching-globals-is-harmful",
       "appendix": "from Artem Zakharchenko"
