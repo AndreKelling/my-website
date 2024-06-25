@@ -1,6 +1,21 @@
 {
   "list": [
     {
+      "text": "About a missing fullstack framework in JS",
+      "url": "https://wasp-lang.dev/blog/2024/05/29/why-we-dont-have-laravel-for-javascript-yet",
+      "appendix": "from Vinny"
+    },
+    {
+      "text": "About performance on DOM nesting",
+      "url": "https://frontendatscale.com/blog/how-deep-is-your-dom/",
+      "appendix": "from Maxi Ferreira"
+    },
+    {
+      "text": "About speculation rules to preload certain pages",
+      "url": "https://www.debugbear.com/blog/speculation-rules",
+      "appendix": "from Umar Hansa"
+    },
+    {
       "text": "How long user stay on a web-page and what is Weibull distribution?",
       "url": "https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/",
       "appendix": "from Jakob Nielsen"
