@@ -1,6 +1,16 @@
 {
   "list": [
     {
+      "text": "Calculate breakpoints numbers with pure CSS",
+      "url": "https://css-tip.com/screen-dimension",
+      "appendix": "from Tmani Afif "
+    },
+    {
+      "text": "About node package creation with JSR",
+      "url": "https://marvinh.dev/blog/speeding-up-javascript-ecosystem-part-10/",
+      "appendix": "from Marvin Hagemeist"
+    },
+    {
       "text": "About a missing fullstack framework in JS",
       "url": "https://wasp-lang.dev/blog/2024/05/29/why-we-dont-have-laravel-for-javascript-yet",
       "appendix": "from Vinny"
