@@ -1,9 +1,24 @@
 {
   "list": [
     {
+      "text": "about CSS and it's missing versions",
+      "url": "https://www.smashingmagazine.com/2024/08/time-to-talk-about-css5/",
+      "appendix": "from Brecht De Ruyte"
+    },
+    {
+      "text": "Story of massive Font deploying with Rust",
+      "url": "https://chevyray.dev/blog/creating-175-fonts/",
+      "appendix": "from Chevy Ray"
+    },
+    {
+      "text": "How Google handles JavaScript throughout the indexing process",
+      "url": "https://vercel.com/blog/how-google-handles-javascript-throughout-the-indexing-process",
+      "appendix": "from MERJ"
+    },
+    {
       "text": "Calculate breakpoints numbers with pure CSS",
       "url": "https://css-tip.com/screen-dimension",
-      "appendix": "from Tmani Afif "
+      "appendix": "from Tmani Afif"
     },
     {
       "text": "About node package creation with JSR",
