@@ -1,6 +1,11 @@
 {
   "list": [
     {
+      "text": "about the story of GitHub",
+      "url": "https://blog.gitbutler.com/why-github-actually-won/",
+      "appendix": "from Scott Chacon"
+    },
+    {
       "text": "about CSS and it's missing versions",
       "url": "https://www.smashingmagazine.com/2024/08/time-to-talk-about-css5/",
       "appendix": "from Brecht De Ruyte"
