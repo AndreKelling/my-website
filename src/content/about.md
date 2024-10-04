@@ -20,35 +20,35 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 
 <ul>
   <li>since Feb. 2024</li>
-	<li>Interim Angular Development</li>
+	<li>Angular Development</li>
 	<li><a href="https://qualityminds.com/" rel="noreferrer noopener" target="_blank" title="qualityminds.com website">QualityMinds GmbH</a></li>
 	<li>Remote</li>
 	<li>Mar. 2023 — Okt. 2023</li>
-	<li>Interim Java Development</li>
+	<li>Java Development</li>
 	<li><a href="https://www.testberichte.de/" rel="noreferrer noopener" target="_blank" title="Testberichte.de website">Testberichte.de</a></li>
 	<li>Berlin</li>
 	<li>Okt. 2021 — Dez. 2022</li>
-	<li>Interim TS Development</li>
+	<li>TypeScript Development</li>
 	<li><a href="https://www.handelsblatt.com" rel="noreferrer noopener" target="_blank" title="handelsblatt.com website">Handelsblatt</a></li>
 	<li>Düsseldorf</li>
 	<li>Feb. 2021 — Aug. 2021</li>
-	<li>Interim TS Development</li>
+	<li>TypeScript Development</li>
 	<li><a href="https://unitb.de" rel="noreferrer noopener" target="_blank" title="unitb.de website">unitb.de</a></li>
 	<li>Berlin</li>
 	<li>June 2020 — Feb. 2021</li>
-	<li>Interim Vue Development</li>
+	<li>Vue Development</li>
 	<li><a href="https://www.e-pixler.de/" rel="noreferrer noopener" target="_blank" title="e-pixler.de website">e-pixler.de</a></li>
 	<li>Berlin</li>
 	<li>Aug. 2019 — Mar. 2020</li>
-	<li>Interim Front End Development (again)</li>
+	<li>FrontEnd Development (again)</li>
 	<li><a href="https://www.testberichte.de/" rel="noreferrer noopener" target="_blank" title="Testberichte.de website">Testberichte.de</a></li>
 	<li>Berlin</li>
 	<li>Apr. 2019 — June 2019</li>
-	<li>Interim Angular Development</li>
+	<li>Angular Development</li>
 	<li><a href="https://vilua.de/" rel="noreferrer noopener" target="_blank" title="vilua.de website">vilua.de</a></li>
 	<li>Berlin</li>
 	<li>Aug. 2018 — Mar. 2019</li>
-	<li>Interim Front End Development</li>
+	<li>FrontEnd Development</li>
 	<li><a href="https://www.testberichte.de/" rel="noreferrer noopener" target="_blank" title="Testberichte.de website">Testberichte.de</a></li>
 	<li>Berlin</li>
 	<li>since Mar. 2018</li>
@@ -56,7 +56,7 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 	<li><a href="/" title="for various agencies, clients, companies and associations">As a freelancer</a></li>
 	<li>Berlin</li>
 	<li>July 2016 — Feb. 2018</li>
-	<li>Front End Development</li>
+	<li>FrontEnd Development</li>
 	<li><a href="https://inviqa.com/" rel="noreferrer noopener" target="_blank">Inviqa</a></li>
 	<li>Berlin</li>
 	<li>Aug. 2012 — June 2016</li>
