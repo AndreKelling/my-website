@@ -1,6 +1,26 @@
 {
   "list": [
     {
+      "text": "about the clipboard",
+      "url": "https://alexharri.com/blog/clipboard",
+      "appendix": "from Alex Harri"
+    },
+    {
+      "text": "about URL design",
+      "url": "https://blog.jim-nielsen.com/2023/examples-of-great-urls/",
+      "appendix": "from Jim Nielsen"
+    },
+    {
+      "text": "about Discord optimizng its performance",
+      "url": "https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent",
+      "appendix": "from Austin Whyte"
+    },
+    {
+      "text": "about JS benchmarking with tachometer",
+      "url": "https://nolanlawson.com/2024/08/05/reliable-javascript-benchmarking-with-tachometer/",
+      "appendix": "from Nolan Lawson"
+    },
+    {
       "text": "about the story of GitHub",
       "url": "https://blog.gitbutler.com/why-github-actually-won/",
       "appendix": "from Scott Chacon"
