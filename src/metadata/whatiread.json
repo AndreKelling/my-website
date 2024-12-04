@@ -1,6 +1,56 @@
 {
   "list": [
     {
+      "text": "a jest and vitest comparrison",
+      "url": "https://www.speakeasy.com/post/vitest-vs-jest",
+      "appendix": "from Nolan Sullivan"
+    },
+    {
+      "text": "how to abstract",
+      "url": "https://fhur.me/posts/2024/thats-not-an-abstraction",
+      "appendix": "from Fernando Hurtado Cardenas"
+    },
+    {
+      "text": "about CSS selector performance",
+      "url": "https://www.trysmudford.com/blog/i-spent-a-day-making-the-website-go-2ms-faster/",
+      "appendix": "from Trys Mudford"
+    },
+    {
+      "text": "why to not trust the Rust hype",
+      "url": "https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/",
+      "appendix": "from Nolan Lawson"
+    },
+    {
+      "text": "about git and GitHub history",
+      "url": "https://registerspill.thorstenball.com/p/how-i-use-git",
+      "appendix": "from Thorsten Ball"
+    },
+    {
+      "text": "about runtime type guards when using typescript",
+      "url": "https://medium.com/@wujido20/runtime-types-in-typescript-5f74fc9dc6c4",
+      "appendix": "from  Vaclav Hrouda"
+    },
+    {
+      "text": "how to prevent env vars for secrets",
+      "url": "https://www.nodejs-security.com/blog/do-not-use-secrets-in-environment-variables-and-here-is-how-to-do-it-better",
+      "appendix": "from Liran Tal"
+    },
+    {
+      "text": "about coloured fonts and ligature logics",
+      "url": "https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/",
+      "appendix": "from Heikki Lotvonen"
+    },
+    {
+      "text": "about HTML attributes and DOM properties",
+      "url": "https://jakearchibald.com/2024/attributes-vs-properties/",
+      "appendix": "from Jake Archibald"
+    },
+    {
+      "text": "about the definition of a single page app",
+      "url": "https://jakelazaroff.com/words/whats-a-single-page-app/",
+      "appendix": "from Jake Lazaroff"
+    },
+    {
       "text": "about the clipboard",
       "url": "https://alexharri.com/blog/clipboard",
       "appendix": "from Alex Harri"
