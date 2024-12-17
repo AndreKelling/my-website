@@ -1,6 +1,31 @@
 {
   "list": [
     {
+      "text": "about a tool for serverless with state",
+      "url": "https://sunilpai.dev/posts/the-future-of-serverless/",
+      "appendix": "from Sunil Pai"
+    },
+    {
+      "text": "about AI assistet coding",
+      "url": "https://addyo.substack.com/p/the-70-problem-hard-truths-about",
+      "appendix": "from Addy Osmani"
+    },
+    {
+      "text": "about NodeJS streams",
+      "url": "https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams",
+      "appendix": "from Pavel Romanov"
+    },
+    {
+      "text": "about state management with react",
+      "url": "https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/",
+      "appendix": "from Prabashwara Seneviratne"
+    },
+    {
+      "text": "about JS writing without bundler",
+      "url": "https://playfulprogramming.com/posts/modern-js-bundleless",
+      "appendix": "from Corbin Crutchley"
+    },
+    {
       "text": "a jest and vitest comparrison",
       "url": "https://www.speakeasy.com/post/vitest-vs-jest",
       "appendix": "from Nolan Sullivan"
