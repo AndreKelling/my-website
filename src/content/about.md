@@ -1,6 +1,6 @@
 ---
 layout: about-page.njk
-date: 2024-03-27 17:02:22
+date: 2025-01-17 20:38:00
 createdAt: 2010-10-26 04:39:33
 
 bodyClass: "about-page"
@@ -19,7 +19,11 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 <h2>Vita:</h2>
 
 <ul>
-  <li>since Feb. 2024</li>
+  <li>since Jan. 2025</li>
+	<li>FrontEnd Development</li>
+	<li><a href="https://kriegerdigital.de/" rel="noreferrer noopener" target="_blank" title="kriegerdigital.de website">KIS GmbH & Co. KG</a></li>
+	<li>Berlin —&gt; Schönefeld</li>
+  <li>Feb. 2024 — Dez. 2024</li>
 	<li>Angular Development</li>
 	<li><a href="https://qualityminds.com/" rel="noreferrer noopener" target="_blank" title="qualityminds.com website">QualityMinds GmbH</a></li>
 	<li>Remote</li>
@@ -85,10 +89,10 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 	<li class="per50">--</li>
 	<li class="per70">CSS</li>
   <li class="per80">Angular</li>
-	<li class="per60">React</li>
+	<li class="per80">React</li>
 	<li class="per60">Vue</li>
 	<li class="per50">Svelte</li>
-	<li class="per60">jQuery</li>
+	<li class="per50">jQuery</li>
 </ul>
 
 <p>&nbsp;</p>
@@ -98,7 +102,7 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 <ul>
 	<li class="per70">Scrum / Kanban</li>
 	<li class="per60">QA</li>
-	<li class="per70">Automated Testing: unit, integration, smoke, e2e, performance</li>
+	<li class="per80">Automated Testing: unit, integration, smoke, e2e, performance</li>
 	<li class="per60">PM: Jira, Asana, Trello</li>
 	<li class="per50">--</li>
 	<li class="per70">Docker</li>
@@ -106,6 +110,7 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 	<li class="per40">AWS</li>
 	<li class="per30">Cloudflare</li>
 	<li class="per70">Github, Bitbucket, Gitlab, Beanstalk</li>
+  <li class="per60">Jenkins</li>
 	<li class="per50">--</li>
 	<li class="per60">UX | UI</li>
 	<li class="per70">SEO</li>
@@ -116,10 +121,10 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 <h3>Creative:</h3>
 
 <ul>
+  <li class="per70">Figma</li>
 	<li class="per30">Framer</li>
-	<li class="per70">Sketch</li>
-	<li class="per70">Adobe Creative Suite</li>
-	<li class="per50">--</li>
-	<li class="per60">Zeplin / Invision / Figma</li>
+	<li class="per60">Sketch</li>
+	<li class="per60">Adobe Creative Suite</li>
+	<li class="per60">Zeplin / Invision</li>
 </ul>
 </div>
