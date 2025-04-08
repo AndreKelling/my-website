@@ -1,8 +1,8 @@
-const penthouse = require("penthouse")
-const fs = require("fs")
-const { criticalCssPath, distDir, cssFilePath, browserSyncPort } = require("./config.mjs")
+import penthouse from "penthouse";
+import fs from "node:fs";
+import { criticalCssPath, distDir, cssFilePath, browserSyncPort } from "./config.mjs";
 
-module.exports = penthouse({
+penthouse({
   url: `http://localhost:${browserSyncPort}/`,
   // url: 'https://andrekelling.de/works',
   css: cssFilePath,
