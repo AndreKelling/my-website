@@ -1,12 +1,15 @@
-export const srcDir = "./src/"
-export const distDir = "./dist/"
+import path from "node:path"
+const __dirname = path.resolve();
+
+export const srcDir = `${__dirname}/src/`
+export const distDir = `${__dirname}/dist/`
 export const srcAssetsDir = `${srcDir}assets/`
 export const srcAssetsRootDir = `${srcDir}assets-root/`
 export const srcLayoutsDir = `${srcDir}layouts/`
 export const cssFilePath = `${srcAssetsDir}style.css`
 export const jsFilePath = `${srcAssetsDir}main.js`
 export const imageDirs = {
-  src: `${srcDir}images-original/*.{jpg,png,svg}`,
+  src: `${srcDir}images-original`,
   srcPreviews: `${srcDir}images-original/previews`, // preserve path for glob in image-resize.mjs
   srcContent: `${srcDir}images-original/content`, // preserve path for glob in image-resize.mjs
   dist: `${srcAssetsDir}images`,

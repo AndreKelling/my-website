@@ -26,6 +26,7 @@ import noop from "gulp-noop";
 import browserSync from "browser-sync";
 const bs = browserSync.create();
 import { srcLayoutsDir, criticalCssPath, browserSyncPort, srcDir, srcAssetsRootDir, srcAssetsDir, imageDirs } from "./config.mjs";
+import imageResize from "./image-resize.mjs"
 
 const svgOriginalFiles = `${srcDir}svg-original/**/*`
 const outputDir = srcAssetsDir
@@ -97,44 +98,44 @@ export const stylelint = (done) => {
 
 /** images * */
 const imagesRoot = async () => {
-  await imagemin([imageDirs.src], {
-    destination: imageDirs.dist,
-    plugins: [
-      imageminJpegRecompress({
-        loops: 4,
-        min: 50,
-        max: 95,
-        quality: "high"
-      }),
-      imageminPngquant()
-    ],
-  });
+  const imageDirArr = [
+    { src: imageDirs.src, dist: imageDirs.dist },
+    { src: imageDirs.srcPreviews, dist: imageDirs.distPreviews },
+    { src: imageDirs.srcContent, dist: imageDirs.distContent, }]
+  for (const imageDir of imageDirArr) {
+    await imagemin([`${imageDir.src}/*.{jpg,png,svg}`], {
+      destination: imageDir.dist,
+      plugins: [
+        imageminJpegRecompress({
+          loops: 4,
+          min: 50,
+          max: 95,
+          quality: "high"
+        }),
+        imageminPngquant()
+      ],
+    });
+  }
 }
-const imagesPreview = (done) =>
-  exec(`node image-resize.mjs ${imageDirs.srcPreviews} ${imageDirs.distPreviews} 170`, (err, stdout, stderr) => {
-    console.log(stdout)
-    console.log(stderr)
-    done(err)
-  })
-const imagesContentResize444 = (done) =>
-  exec(`node image-resize.mjs ${imageDirs.srcContent} ${imageDirs.distContent} 444 -md`, (err, stdout, stderr) => {
-    console.log(stdout)
-    console.log(stderr)
-    done(err)
-  })
-const imagesContentResize888 = (done) =>
-  exec(`node image-resize.mjs ${imageDirs.srcContent} ${imageDirs.distContent} 888 -lg`, (err, stdout, stderr) => {
-    console.log(stdout)
-    console.log(stderr)
-    done(err)
-  })
+const imagesPreview = (done) => {
+  imageResize(imageDirs.srcPreviews, imageDirs.distPreviews, 170)
+  done();
+}
+const imagesContentResize444 = (done) => {
+  imageResize(imageDirs.srcContent, imageDirs.distContent, 444, "-md")
+  done()
+}
+const imagesContentResize888 = (done) => {
+  imageResize(imageDirs.srcContent, imageDirs.distContent, 888, "-lg")
+  done()
+}
 
 // parallel
 export const images = gulp.series(
   imagesRoot,
-  imagesPreview,
-  imagesContentResize444,
-  imagesContentResize888
+    imagesPreview,
+    imagesContentResize444,
+    imagesContentResize888
 )
 
 /** svg symbols * */
@@ -231,7 +232,7 @@ export const buildProd = gulp.series(
 
 /** watch * */
 
-export const watch = () => {
+export default function watch() {
   build()
 
   gulp.watch(paths.site, buildMetalsmith)
@@ -241,5 +242,5 @@ export const watch = () => {
 
   gulp.watch(paths.scripts.src, gulp.series(scripts, buildMetalsmith))
 
-  gulp.watch([imageDirs.src, imageDirs.srcPreviews, imageDirs.srcContent], gulp.series(images, buildMetalsmith))
+  gulp.watch([imageDirs.src], gulp.series(images, buildMetalsmith))
 }
