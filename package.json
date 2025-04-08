@@ -14,7 +14,7 @@
     "icons": "gulp svgsymbols",
     "watch": "gulp",
     "build": "gulp build",
-    "build:prod": "cross-env NODE_ENV=production gulp buildProd",
+    "build:prod": "cross-env NODE_ENV=production gulp buildProd --experimental-print-required-tla",
     "build:metalsmith": "node metalsmith.mjs",
     "lint": "npm run lint:js & gulp stylelint",
     "lint:js": "npx @biomejs/biome lint src/js/**/*.js",
