@@ -1,7 +1,11 @@
 <ul>
   {% for item in whatiread.list %}
     {% if item.text and loop.index <= maxWhatireadItems %}
-      <li class="item-{{ loop.index }}">
+      {% set tagClasses = '' %}
+      {% for tag in item.tags %}
+        {% set tagClasses = tagClasses + ' tag--' + tag | condenseTitle %}
+      {% endfor %}
+      <li class="item-{{ loop.index }} {{tagClasses}}">
         <a href="{{ item.url }}" title="onwards to the article" target="_blank" rel="nofollow">{{ item.text }}</a>
 
         {% if item.appendix %}

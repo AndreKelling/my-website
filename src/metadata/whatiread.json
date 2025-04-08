@@ -9,7 +9,7 @@
       "text": "How to do an undo-feature",
       "url": "https://blog.julik.nl/2025/03/a-tiny-undo-stack",
       "appendix": "from  Julik Tarkhanov",
-      "tags": "JS"
+      "tags": ["JS"]
     },
     {
       "text": "Why to count on web standards in frontend",
@@ -20,50 +20,54 @@
       "text": "About Node version managers",
       "url": "https://pavel-romanov.com/5-node-version-managers-compared-which-is-right-for-you",
       "appendix": "from Pavel Romanov",
-      "tags": "nodeJS"
+      "tags": ["nodeJS"]
     },
     {
       "text": "About archiving data for 100 years",
       "url": "https://lil.law.harvard.edu/century-scale-storage/",
       "appendix": "from Maxwell Neely-Cohen",
-      "tags": "must-read"
+      "tags": ["must-read"]
     },
     {
       "text": "About your brain at work",
       "url": "https://minds.md/zakirullin/cognitive",
       "appendix": "from Artem Zakirullin",
-      "tags": "must-read"
+      "tags": ["must-read"]
     },
     {
       "text": "Why not to use Tailwind!",
       "url": "https://sancho.dev/blog/tailwind-and-design-systems",
       "appendix": "from David Sancho",
-      "tags": "CSS"
+      "tags": ["CSS"]
     },
     {
       "text": "About asking an LLM to improve itself",
       "url": "https://minimaxir.com/2025/01/write-better-code/",
-      "appendix": "from Max Woolf"
+      "appendix": "from Max Woolf",
+      "tags": ["LLM"]
     },
     {
       "text": "About LLMs in 2024",
       "url": "https://simonwillison.net/2024/Dec/31/llms-in-2024/",
-      "appendix": "from Simon Willison"
+      "appendix": "from Simon Willison",
+      "tags": ["LLM"]
     },
     {
-      "text": "About another versioning apporach",
+      "text": "About another versioning approach",
       "url": "https://antfu.me/posts/epoch-semver",
       "appendix": "from Anthony Fu"
     },
     {
       "text": "About how core Git developers configure Git",
       "url": "https://blog.gitbutler.com/how-git-core-devs-configure-git/",
-      "appendix": "from Scott Chacon"
+      "appendix": "from Scott Chacon",
+      "tags": ["Git"]
     },
     {
       "text": "About CSS overflow clipping",
       "url": "https://ishadeed.com/article/overflow-clip/",
-      "appendix": "from Ahmad Shadeed"
+      "appendix": "from Ahmad Shadeed",
+      "tags": ["CSS", "Tooling"]
     },
     {
       "text": "About a tool for serverless with state",

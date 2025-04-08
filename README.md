@@ -14,6 +14,14 @@ This is my website build with the static website generator [metalsmith](https://
 
 - `npm start` is doing watching and serving
 
+### Nunjucks templates
+
+A not that often seen template language is used here.
+
+Some custom filters are set up in `metalsmith.mjs`
+
+Use `{{ item | dump }}` for viewing objects.
+
 ### Serve
 
 Your site is now running at `http://localhost:3000`!
