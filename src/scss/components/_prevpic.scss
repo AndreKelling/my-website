@@ -1,5 +1,8 @@
+@use "../colors";
+@use "../mixins";
+
 .prevpic {
-	@include image-shadow;
+	@include mixins.image-shadow;
 
 	max-width: 170px;
 
@@ -12,8 +15,8 @@
 		min-width: 80%;
 		padding-left: 4px;
 		letter-spacing: -1px;
-		background-color: $c-purple;
-		color: $c-white;
+		background-color: colors.$c-purple;
+		color: colors.$c-white;
 		opacity: 0;
 		pointer-events: none;
 		z-index: 11;

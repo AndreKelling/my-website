@@ -1,3 +1,5 @@
+@use "../colors";
+
 .spinner {
 	display: none;
 	position: absolute;
@@ -11,8 +13,8 @@
 		display: block;
 		width: 150vmax;
 		height: 150vmax;
-		background-color: $c-green;
-		background-image: radial-gradient(circle closest-side, $c-turkey, $c-green);
+		background-color: colors.$c-green;
+		background-image: radial-gradient(circle closest-side, colors.$c-turkey, colors.$c-green);
 		border-radius: 100%;
 		opacity: 0;
 		animation: kf-blowup 3s infinite ease-in;

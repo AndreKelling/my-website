@@ -1,21 +1,23 @@
+@use "../colors";
+
 /* Footer
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 .footer {
 	text-align: center;
 	padding: 60px 0 120px;
-	color: $c-grey;
-	border-top: 1px dashed $c-darkgreen;
+	color: colors.$c-grey;
+	border-top: 1px dashed colors.$c-darkgreen;
 }
 
 .footer-container {
 	width: 100%;
 	padding: 8px;
-	background: rgba($c-svg-black, .8);
+	background: rgba(colors.$c-svg-black, .8);
 	position: relative;
 	bottom: 0;
-	border-top: 1px solid $c-green;
+	border-top: 1px solid colors.$c-green;
 	box-shadow: 0 0 4px #999;
-	color: $c-white;
+	color: colors.$c-white;
 	z-index: 99;
 	backdrop-filter: blur(5px);
 

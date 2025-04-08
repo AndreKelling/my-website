@@ -1,3 +1,4 @@
+@use "colors";
 @use 'sass:color';
 
 .svg-figure {
@@ -36,12 +37,12 @@
 
 		&:hover  &--fill {
 			opacity: .6;
-			fill: color.adjust($c-lightpurple, $lightness: 20%) !important;
+			fill: color.adjust(colors.$c-lightpurple, $lightness: 20%) !important;
 			transition: opacity .3s, fill .3s;
 		}
 	}
 
 	.fill-line {
-		fill: $c-svg-black;
+		fill: colors.$c-svg-black;
 	}
 }

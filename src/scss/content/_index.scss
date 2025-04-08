@@ -1,3 +1,7 @@
+@use "../font";
+@use "../mixins";
+@use "../breakpoints";
+
 /* Content
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 .content {
@@ -29,10 +33,10 @@
 
 	h2 {
 		font-size: 10em;
-		font-weight: $fw-bold;
+		font-weight: font.$fw-bold;
 		opacity: .4;
 
-		@include breakpoint($brk-l) {
+		@include mixins.breakpoint(breakpoints.$brk-l) {
 			font-size: 21em;
 		}
 	}

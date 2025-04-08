@@ -1,3 +1,5 @@
+@use "../colors";
+@use "../font";
 @use 'sass:color';
 
 /* About
@@ -30,83 +32,83 @@
 	}
 
 	a {
-		color: $c-lightblack;
+		color: colors.$c-lightblack;
 		text-decoration: underline;
 	}
 }
 
 .twocol.fleft > ul > li {
 	&:nth-child(4n+1) {
-		color: color.adjust($c-middlegrey, $lightness: -15%);
+		color: color.adjust(colors.$c-middlegrey, $lightness: -15%);
 	}
 
 	&:nth-child(4n+3) {
 		font-style: oblique;
-		color: color.adjust($c-middlegrey, $lightness: -5%);
+		color: color.adjust(colors.$c-middlegrey, $lightness: -5%);
 	}
 
 	&:nth-child(4n+4) {
-		color: color.adjust($c-middlegrey, $lightness: 5%);
+		color: color.adjust(colors.$c-middlegrey, $lightness: 5%);
 		margin-bottom: 16px;
 	}
 }
 
 .twocol.fright {
 	h2 {
-		color: $c-orange;
+		color: colors.$c-orange;
 	}
 
 	h3 {
 		line-height: 17px;
 		font-size: 16px;
-		color: $c-purple;
-		font-weight: $fw-bold;
+		color: colors.$c-purple;
+		font-weight: font.$fw-bold;
 	}
 
 	> ul > li { /* stylelint-disable-line no-descending-specificity */
-		color: $c-lightorange;
+		color: colors.$c-lightorange;
 
 		&.per10 {
-			color: color.adjust($c-lightorange, $lightness: 30%);
+			color: color.adjust(colors.$c-lightorange, $lightness: 30%);
 		}
 
 		&.per20 {
-			color: color.adjust($c-lightorange, $lightness: 20%);
+			color: color.adjust(colors.$c-lightorange, $lightness: 20%);
 		}
 
 		&.per30 {
-			color: color.adjust($c-lightorange, $lightness: 15%);
+			color: color.adjust(colors.$c-lightorange, $lightness: 15%);
 		}
 
 		&.per40 {
-			color: color.adjust($c-lightorange, $lightness: 10%);
+			color: color.adjust(colors.$c-lightorange, $lightness: 10%);
 		}
 
 		&.per50 {
-			color: color.adjust($c-lightorange, $lightness: 5%);
+			color: color.adjust(colors.$c-lightorange, $lightness: 5%);
 		}
 
 		&.per60 {
-			color: color.adjust($c-lightorange, $lightness: -10%);
+			color: color.adjust(colors.$c-lightorange, $lightness: -10%);
 		}
 
 		&.per70 {
-			color: color.adjust($c-lightorange, $lightness: -12%);
+			color: color.adjust(colors.$c-lightorange, $lightness: -12%);
 		}
 
 		&.per80 {
-			color: color.adjust($c-lightorange, $lightness: -15%);
-			text-shadow: 0 0 3px $c-gold;
+			color: color.adjust(colors.$c-lightorange, $lightness: -15%);
+			text-shadow: 0 0 3px colors.$c-gold;
 		}
 
 		&.per90 {
-			color: color.adjust($c-lightorange, $lightness: -18%);
-			text-shadow: 0 0 3px $c-gold;
+			color: color.adjust(colors.$c-lightorange, $lightness: -18%);
+			text-shadow: 0 0 3px colors.$c-gold;
 		}
 
 		&.per100 {
-			color: color.adjust($c-lightorange, $lightness: -23%);
-			text-shadow: 0 0 1px $c-gold;
+			color: color.adjust(colors.$c-lightorange, $lightness: -23%);
+			text-shadow: 0 0 1px colors.$c-gold;
 		}
 	}
 }

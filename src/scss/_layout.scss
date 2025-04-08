@@ -1,14 +1,17 @@
+@use "mixins";
+@use "breakpoints";
+
 /* Layout Styles
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 .wrapper {
-	@include clear;
+	@include mixins.clear;
 
 	position: relative;
 	max-width: 768px;
 	padding: 0 16px;
 	margin: 0 auto;
 
-	@include breakpoint($brk-s) {
+	@include mixins.breakpoint(breakpoints.$brk-s) {
 		padding: 0 30px;
 	}
 

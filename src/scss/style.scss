@@ -4,35 +4,28 @@ stylesheet
 (c) 2018 by Andre Kelling
 ================================================== */
 
-/* Breakpoints
-<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
-$brk-xs: 330px;
-$brk-s: 375px;
-$brk-m: 443px;
-$brk-l: 622px;
-$brk-xl: 766px;
-
-@import 'normalize';
-@import 'colors';
-@import 'mixins';
-@import 'icons';
-@import 'font';
-@import 'base';
-@import 'tools';
-@import 'components/spinner';
-@import 'components/prevpic';
-@import 'layout';
-@import 'svg';
-@import 'partials/logo';
-@import 'partials/header';
-@import 'partials/nav';
-@import 'partials/whatiread';
-@import 'content/index';
-@import 'content/overview';
-@import 'content/sliderio'; // named this because weird not syntax highlighting of phpstorm
-@import 'content/project-page';
-@import 'content/about';
-@import 'partials/footer';
+@use 'breakpoints';
+@use 'normalize';
+@use 'colors';
+@use 'mixins';
+@use 'icons';
+@use 'font';
+@use 'base';
+@use 'tools';
+@use 'components/spinner';
+@use 'components/prevpic';
+@use 'layout';
+@use 'svg';
+@use 'partials/logo';
+@use 'partials/header';
+@use 'partials/nav';
+@use 'partials/whatiread';
+@use 'content/index';
+@use 'content/overview';
+@use 'content/sliderio'; // named this because weird not syntax highlighting of phpstorm
+@use 'content/project-page';
+@use 'content/about';
+@use 'partials/footer';
 
 /* Print
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
@@ -70,20 +63,20 @@ $brk-xl: 766px;
 
 .mainnav {
 	a::selection {
-		background: $c-lightorange;
-		color: $c-white;
+		background: colors.$c-lightorange;
+		color: colors.$c-white;
 	}
 
 	.item-1 a::selection {
-		background: $c-lightpurple;
+		background: colors.$c-lightpurple;
 	}
 
 	.item-3 a::selection {
-		background: $c-turkey;
+		background: colors.$c-turkey;
 	}
 }
 
 ::selection {
-	background: $c-green;
-	color: $c-white;
+	background: colors.$c-green;
+	color: colors.$c-white;
 }

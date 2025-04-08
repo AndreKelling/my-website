@@ -1,3 +1,4 @@
+@use "../colors";
 @use 'sass:list';
 
 .logo {
@@ -23,8 +24,8 @@ $animation-delay-logo: 3s;
 	}
 }
 
-$colors: $c-lightorange, $c-lightpurple, $c-gold;
-$fill-colors: $c-lightpurple, $c-gold, $c-lightorange;
+$colors: colors.$c-lightorange, colors.$c-lightpurple, colors.$c-gold;
+$fill-colors: colors.$c-lightpurple, colors.$c-gold, colors.$c-lightorange;
 $max: 3;
 $stroke-step: 7%;
 
@@ -57,27 +58,27 @@ $stroke-step: 7%;
 
 @keyframes heartbeat-color {
 	0% {
-		fill: $c-gold;
+		fill: colors.$c-gold;
 	}
 
 	20% {
-		fill: $c-lightorange;
+		fill: colors.$c-lightorange;
 	}
 
 	40% {
-		fill: $c-gold;
+		fill: colors.$c-gold;
 	}
 
 	60% {
-		fill: $c-lightorange;
+		fill: colors.$c-lightorange;
 	}
 
 	80% {
-		fill: $c-gold;
+		fill: colors.$c-gold;
 	}
 
 	100% {
-		fill: $c-gold;
+		fill: colors.$c-gold;
 	}
 }
 

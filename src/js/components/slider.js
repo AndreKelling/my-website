@@ -25,11 +25,11 @@ class Slider extends HTMLElement {
   }
 
   thumbnailNav() {
-    this.querySelectorAll("nav > span").forEach((el) => {
+    for (const el of this.querySelectorAll("nav > span")) {
       el.addEventListener("click", () => {
         this.switchImage(el)
       })
-    })
+    }
   }
 
   switchImage(el) {

@@ -1,3 +1,5 @@
+@use "colors";
+
 @mixin breakpoint($point) {
   @media (min-width: $point) {
     @content ;
@@ -34,8 +36,8 @@
     width: 50%;
     top: 80%;
     max-width: 300px;
-    background: $c-middlegrey;
-    box-shadow: 0 15px 10px $c-middlegrey;
+    background: colors.$c-middlegrey;
+    box-shadow: 0 15px 10px colors.$c-middlegrey;
     transform: rotate(-3deg);
   }
 

@@ -35,15 +35,15 @@ const Fetcher = (() => {
   const _addInternalLinksListener = (el) => {
     const internalLinks = el.querySelectorAll(linkSelector)
 
-    internalLinks.forEach((el) => {
-      el.addEventListener("click", (e) => {
+    for (const internalLink of internalLinks) {
+      internalLink.addEventListener("click", (e) => {
         e.preventDefault()
 
-        const url = siteUrl + el.getAttribute("href")
+        const url = siteUrl + internalLink.getAttribute("href")
 
         // @todo: put animation stuff into external module?
-        if (el.classList.contains(animationTargetClass)) {
-          el.classList.add(animationClass)
+        if (internalLink.classList.contains(animationTargetClass)) {
+          internalLink.classList.add(animationClass)
           setTimeout(() => {
             _clickFetch(url)
           }, animationTime)
@@ -52,7 +52,7 @@ const Fetcher = (() => {
 
         _clickFetch(url)
       })
-    })
+    }
   }
 
   const _reinitMain = (main) => {

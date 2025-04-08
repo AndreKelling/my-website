@@ -1,3 +1,7 @@
+@use "../colors";
+@use "../mixins";
+@use "../breakpoints";
+
 /* Overview
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 .overview {
@@ -8,7 +12,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 48px 16px;
 
-		@include breakpoint($brk-l) {
+		@include mixins.breakpoint(breakpoints.$brk-l) {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
@@ -17,7 +21,7 @@
 		font-size: 12px;
 		list-style-type: none;
 
-		@include breakpoint($brk-l) {
+		@include mixins.breakpoint(breakpoints.$brk-l) {
 			font-size: 16px;
 		}
 	}
@@ -31,7 +35,7 @@
 
 		&:hover h3,
 		&:focus h3 {
-			color: $c-orange;
+			color: colors.$c-orange;
 		}
 
 		&:hover,

@@ -1,3 +1,7 @@
+@use "../colors";
+@use "../mixins";
+@use "../breakpoints";
+
 ak-slider {
 	display: block;
 	margin-bottom: 20px;
@@ -14,7 +18,7 @@ ak-slider {
 
 .slider--pager > span {
 	flex-basis: 25%;
-	border-right: 1px dotted $c-lightblack;
+	border-right: 1px dotted colors.$c-lightblack;
 	align-self: end;
 	box-sizing: border-box;
 	background: transparent;
@@ -23,7 +27,7 @@ ak-slider {
 
 	&:hover,
 	&:focus {
-		background: $c-lightorange;
+		background: colors.$c-lightorange;
 
 		img {
 			opacity: .5;
@@ -41,11 +45,11 @@ ak-slider {
 		border-right-color: transparent;
 	}
 
-	@include breakpoint($brk-l) {
+	@include mixins.breakpoint(breakpoints.$brk-l) {
 		flex-basis: 12.5%;
 
 		&:nth-of-type(4n) {
-			border-right-color: $c-lightblack;
+			border-right-color: colors.$c-lightblack;
 		}
 
 		&:last-of-type,

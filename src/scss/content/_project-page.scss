@@ -1,3 +1,7 @@
+@use "../colors";
+@use "../mixins";
+@use "../breakpoints";
+
 .details {
 	float: left;
 	width: 100%;
@@ -13,7 +17,7 @@
 	}
 
 	&__icon {
-		fill: $c-purple;
+		fill: colors.$c-purple;
 		width: 21px;
 		margin-right: 6px;
 
@@ -25,14 +29,14 @@
 	&__title {
 		display: block;
 		margin-bottom: -2px;
-		color: $c-purple;
+		color: colors.$c-purple;
 	}
 
 	&__text {
 		margin-left: 30px;
 	}
 
-	@include breakpoint($brk-xl) {
+	@include mixins.breakpoint(breakpoints.$brk-xl) {
 		width: 28%;
 	}
 }
@@ -46,7 +50,7 @@
 		margin-left: 1em;
 	}
 
-	@include breakpoint($brk-xl) {
+	@include mixins.breakpoint(breakpoints.$brk-xl) {
 		float: left;
 		width: 70%;
 		padding-left: 22px;

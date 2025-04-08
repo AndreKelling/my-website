@@ -1,3 +1,5 @@
+@use "colors";
+@use "font";
 @use 'sass:color';
 
 /* Base
@@ -5,14 +7,14 @@
 
 body {
 	/* images/brillant.png */
-	background: $c-white-bg url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAAAAABzQ+pjAAAAFElEQVQIHWP48/0/029WBsb/DAwAJ4kE9Tid5T0AAAAASUVORK5CYII=') repeat;
+	background: colors.$c-white-bg url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAAAAABzQ+pjAAAAFElEQVQIHWP48/0/029WBsb/DAwAJ4kE9Tid5T0AAAAASUVORK5CYII=') repeat;
 	overflow: hidden scroll;
-	font-family: $f-main;
+	font-family: font.$f-main;
 	font-size: 16px;
 	line-height: 24px;
 	text-align: left;
-	color: $c-lightblack;
-	border-top: 1px solid $c-green;
+	color: colors.$c-lightblack;
+	border-top: 1px solid colors.$c-green;
 	min-width: 320px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -25,12 +27,12 @@ p {
 }
 
 a {
-	color: color.adjust($c-green, $lightness: -10);
+	color: color.adjust(colors.$c-green, $lightness: -10);
 	transition: color 200ms ease-in;
 
 	&:hover,
 	&:focus {
-		color: $c-orange;
+		color: colors.$c-orange;
 	}
 }
 
@@ -46,7 +48,7 @@ h6 {
 
 h1 {
 	font-size: 20px;
-	color: color.adjust($c-darkgreen, $lightness: -20%);
+	color: color.adjust(colors.$c-darkgreen, $lightness: -20%);
 	letter-spacing: .02em;
 	text-transform: uppercase;
 	margin: 0 0 .3em;
@@ -56,13 +58,13 @@ h2 {
 	font-size: 15px;
 	text-transform: uppercase;
 	margin: 0 0 6px;
-	color: $c-darkgreen;
+	color: colors.$c-darkgreen;
 }
 
 h3 {
 	font-size: 14px;
 	text-transform: uppercase;
-	color: $c-lightgreen;
+	color: colors.$c-lightgreen;
 }
 
 h4 {
@@ -71,14 +73,14 @@ h4 {
 }
 
 blockquote {
-	font-family: $f-serif;
+	font-family: font.$f-serif;
 	font-size: 18px;
 	font-style: italic;
 	margin: 2.75em 0;
 	padding: 1em 40px;
 	line-height: 1.45;
 	position: relative;
-	color: color.adjust($c-middlegrey, $lightness: -10%);
+	color: color.adjust(colors.$c-middlegrey, $lightness: -10%);
 
 	&::before {
 		content: "\201C";
@@ -87,7 +89,7 @@ blockquote {
 		top: -.5em;
 		left: 50%;
 		margin-left: -27px;
-		color: color.adjust($c-middlegrey, $lightness: 20%);
+		color: color.adjust(colors.$c-middlegrey, $lightness: 20%);
 	}
 }
 
@@ -108,7 +110,7 @@ img {
 		left: 0;
 		text-align: center;
 		padding: 4px;
-		background-color: $c-lightgrey;
+		background-color: colors.$c-lightgrey;
 		border-radius: 4px;
 		z-index: 2;
 	}

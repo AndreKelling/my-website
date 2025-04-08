@@ -1,10 +1,13 @@
+@use "../colors";
+@use "../font";
+
 /* Navigation
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><> */
 
 .mainnav {
 	position: relative;
 	text-align: center;
-	font-family: $f-serif;
+	font-family: font.$f-serif;
 	letter-spacing: -.05em;
 	font-size: 34px;
 	line-height: 1em;
@@ -25,27 +28,27 @@
 		a {
 			display: inline-block;
 			text-decoration: none;
-			color: $c-lightblack;
+			color: colors.$c-lightblack;
 			transition: color 200ms ease-in-out;
 		}
 
 		&.current a,
 		a:hover,
 		a:focus {
-			color: $c-lightorange;
+			color: colors.$c-lightorange;
 			filter: blur(1px);
 		}
 
 		&.item-1.current a,
 		&.item-1 a:hover,
 		&.item-1 a:focus {
-			color: $c-lightpurple;
+			color: colors.$c-lightpurple;
 		}
 
 		&.item-3.current a,
 		&.item-3 a:hover,
 		&.item-3 a:focus {
-			color: $c-green;
+			color: colors.$c-green;
 		}
 	}
 

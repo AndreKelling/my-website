@@ -11,7 +11,7 @@ const Current = (() => {
   const menu = () => {
     const url = window.location.href;
 
-    mainMenuSel.querySelectorAll("li").forEach((el) => {
+    for (const el of mainMenuSel.querySelectorAll("li")) {
       const link = el.querySelector("a");
 
       el.classList.remove(CURRENT_CLASS)
@@ -19,7 +19,7 @@ const Current = (() => {
       if (link.href === url) {
         el.classList.add(CURRENT_CLASS)
       }
-    })
+    }
   }
 
   /**
