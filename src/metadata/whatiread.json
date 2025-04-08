@@ -1,92 +1,92 @@
 {
   "list": [
     {
-      "text": "about forbidden request headers",
+      "text": "About forbidden request headers",
       "url": "https://macarthur.me/posts/forbidden-request-headers/",
       "appendix": "from Alex MacArthur"
     },
     {
-      "text": "how to do an undo-feature",
+      "text": "How to do an undo-feature",
       "url": "https://blog.julik.nl/2025/03/a-tiny-undo-stack",
       "appendix": "from  Julik Tarkhanov",
       "tags": "JS"
     },
     {
-      "text": "why to count on web standards in frontend",
+      "text": "Why to count on web standards in frontend",
       "url": "https://polotek.net/posts/the-frontend-treadmill/",
       "appendix": "from Marco Rogers"
     },
     {
-      "text": "about Node version managers",
+      "text": "About Node version managers",
       "url": "https://pavel-romanov.com/5-node-version-managers-compared-which-is-right-for-you",
       "appendix": "from Pavel Romanov",
       "tags": "nodeJS"
     },
     {
-      "text": "about archiving data for 100 years",
+      "text": "About archiving data for 100 years",
       "url": "https://lil.law.harvard.edu/century-scale-storage/",
       "appendix": "from Maxwell Neely-Cohen",
       "tags": "must-read"
     },
     {
-      "text": "about your brain at work",
+      "text": "About your brain at work",
       "url": "https://minds.md/zakirullin/cognitive",
       "appendix": "from Artem Zakirullin",
       "tags": "must-read"
     },
     {
-      "text": "why not to use tailwind!",
+      "text": "Why not to use tailwind!",
       "url": "https://sancho.dev/blog/tailwind-and-design-systems",
       "appendix": "from David Sancho",
       "tags": "CSS"
     },
     {
-      "text": "about asking an LLM to improve itself",
+      "text": "About asking an LLM to improve itself",
       "url": "https://minimaxir.com/2025/01/write-better-code/",
       "appendix": "from Max Woolf"
     },
     {
-      "text": "about LLMs in 2024",
+      "text": "About LLMs in 2024",
       "url": "https://simonwillison.net/2024/Dec/31/llms-in-2024/",
       "appendix": "from Simon Willison"
     },
     {
-      "text": "about another versioning apporach",
+      "text": "About another versioning apporach",
       "url": "https://antfu.me/posts/epoch-semver",
       "appendix": "from Anthony Fu"
     },
     {
-      "text": "about how core Git developers configure Git",
+      "text": "About how core Git developers configure Git",
       "url": "https://blog.gitbutler.com/how-git-core-devs-configure-git/",
       "appendix": "from Scott Chacon"
     },
     {
-      "text": "about CSS overflow clipping",
+      "text": "About CSS overflow clipping",
       "url": "https://ishadeed.com/article/overflow-clip/",
       "appendix": "from Ahmad Shadeed"
     },
     {
-      "text": "about a tool for serverless with state",
+      "text": "About a tool for serverless with state",
       "url": "https://sunilpai.dev/posts/the-future-of-serverless/",
       "appendix": "from Sunil Pai"
     },
     {
-      "text": "about AI assistet coding",
+      "text": "About AI assistet coding",
       "url": "https://addyo.substack.com/p/the-70-problem-hard-truths-about",
       "appendix": "from Addy Osmani"
     },
     {
-      "text": "about NodeJS streams",
+      "text": "About NodeJS streams",
       "url": "https://pavel-romanov.com/exploring-the-core-concepts-of-nodejs-readable-streams",
       "appendix": "from Pavel Romanov"
     },
     {
-      "text": "about state management with react",
+      "text": "About state management with react",
       "url": "https://www.frontendundefined.com/posts/monthly/react-state-management-reflections/",
       "appendix": "from Prabashwara Seneviratne"
     },
     {
-      "text": "about JS writing without bundler",
+      "text": "About JS writing without bundler",
       "url": "https://playfulprogramming.com/posts/modern-js-bundleless",
       "appendix": "from Corbin Crutchley"
     },
@@ -96,77 +96,77 @@
       "appendix": "from Nolan Sullivan"
     },
     {
-      "text": "how to abstract",
+      "text": "How to abstract",
       "url": "https://fhur.me/posts/2024/thats-not-an-abstraction",
       "appendix": "from Fernando Hurtado Cardenas"
     },
     {
-      "text": "about CSS selector performance",
+      "text": "About CSS selector performance",
       "url": "https://www.trysmudford.com/blog/i-spent-a-day-making-the-website-go-2ms-faster/",
       "appendix": "from Trys Mudford"
     },
     {
-      "text": "why to not trust the Rust hype",
+      "text": "Why to not trust the Rust hype",
       "url": "https://nolanlawson.com/2024/10/20/why-im-skeptical-of-rewriting-javascript-tools-in-faster-languages/",
       "appendix": "from Nolan Lawson"
     },
     {
-      "text": "about git and GitHub history",
+      "text": "About git and GitHub history",
       "url": "https://registerspill.thorstenball.com/p/how-i-use-git",
       "appendix": "from Thorsten Ball"
     },
     {
-      "text": "about runtime type guards when using typescript",
+      "text": "About runtime type guards when using typescript",
       "url": "https://medium.com/@wujido20/runtime-types-in-typescript-5f74fc9dc6c4",
       "appendix": "from  Vaclav Hrouda"
     },
     {
-      "text": "how to prevent env vars for secrets",
+      "text": "How to prevent env vars for secrets",
       "url": "https://www.nodejs-security.com/blog/do-not-use-secrets-in-environment-variables-and-here-is-how-to-do-it-better",
       "appendix": "from Liran Tal"
     },
     {
-      "text": "about coloured fonts and ligature logics",
+      "text": "About coloured fonts and ligature logics",
       "url": "https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/",
       "appendix": "from Heikki Lotvonen"
     },
     {
-      "text": "about HTML attributes and DOM properties",
+      "text": "About HTML attributes and DOM properties",
       "url": "https://jakearchibald.com/2024/attributes-vs-properties/",
       "appendix": "from Jake Archibald"
     },
     {
-      "text": "about the definition of a single page app",
+      "text": "About the definition of a single page app",
       "url": "https://jakelazaroff.com/words/whats-a-single-page-app/",
       "appendix": "from Jake Lazaroff"
     },
     {
-      "text": "about the clipboard",
+      "text": "About the clipboard",
       "url": "https://alexharri.com/blog/clipboard",
       "appendix": "from Alex Harri"
     },
     {
-      "text": "about URL design",
+      "text": "About URL design",
       "url": "https://blog.jim-nielsen.com/2023/examples-of-great-urls/",
       "appendix": "from Jim Nielsen"
     },
     {
-      "text": "about Discord optimizng its performance",
+      "text": "About Discord optimizng its performance",
       "url": "https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent",
       "appendix": "from Austin Whyte"
     },
     {
-      "text": "about JS benchmarking with tachometer",
+      "text": "About JS benchmarking with tachometer",
       "url": "https://nolanlawson.com/2024/08/05/reliable-javascript-benchmarking-with-tachometer/",
       "appendix": "from Nolan Lawson"
     },
     {
-      "text": "about the story of GitHub",
+      "text": "About the story of GitHub",
       "url": "https://blog.gitbutler.com/why-github-actually-won/",
       "appendix": "from Scott Chacon"
     },
     {
-      "text": "about CSS and it's missing versions",
+      "text": "About CSS and it's missing versions",
       "url": "https://www.smashingmagazine.com/2024/08/time-to-talk-about-css5/",
       "appendix": "from Brecht De Ruyte"
     },
