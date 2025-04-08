@@ -8,9 +8,9 @@ import permalinks from "@metalsmith/permalinks"
 import metadata from "@metalsmith/metadata"
 import when from "metalsmith-if"
 import htmlMinifier from "metalsmith-html-minifier"
-import assets from "metalsmith-static-files"
+import staticFiles from "metalsmith-static-files"
 import collections from "@metalsmith/collections"
-import { cssFilePath, criticalCssPath, jsFilePath, svgSymbolsPath } from "./config.mjs"
+import { cssFilePath, criticalCssPath, jsFilePath, svgSymbolsPath, srcLayoutsDir } from "./config.mjs"
 import fs from "node:fs"
 import { createRequire } from "node:module"
 
@@ -28,7 +28,7 @@ const condenseTitle = (string) => string.toLowerCase().replace(/\s+/g, "")
 const UTCdate = (date) => date.toUTCString("M d, yyyy")
 const blogDate = (date) => date.toLocaleString("en-US", { year: "numeric", month: "long", day: "numeric" })
 const trimSlashes = (string) => string.replace(/(^\/)|(\/$)/g, "")
-const pathMdLink = (string) => `${string.replace(/\.md/g, "")}/`
+const pathWithoutIndexHtml = (string) => string.replace(/index\.html$/, "")
 
 const formatBytes = (bytes) => {
   if (bytes < 1024) {
@@ -46,7 +46,9 @@ const formatBytes = (bytes) => {
 
 // Define engine options for the inplace and layouts plugins
 const templateConfig = {
-  directory: "./src/layouts",
+  directory: srcLayoutsDir,
+  transform: "nunjucks",
+  pattern: "**/*.html",
   engineOptions: {
     smartypants: true,
     smartLists: true,
@@ -57,7 +59,7 @@ const templateConfig = {
       blogDate,
       trimSlashes,
       formatBytes,
-      pathMdLink
+      pathWithoutIndexHtml
     }
   }
 }
@@ -76,7 +78,7 @@ const loadCriticalCss = () => {
       criticalCss = criticalCss.replaceAll(replacePath, basePath + replacePath)
     }
 
-    console.log("criticalCss content", CYAN_START, criticalCss, COLOR_END)
+    // console.log("criticalCss content", CYAN_START, criticalCss, COLOR_END)
     return criticalCss
   } catch (err) {
     if (err.code === "ENOENT") {
@@ -91,7 +93,7 @@ const loadSvgSymbols = () => {
   try {
     const svgSymbols = fs.readFileSync(svgSymbolsPath, "utf8")
 
-    console.log("svgSymbols content", CYAN_START, svgSymbols, COLOR_END)
+    // console.log("svgSymbols content", CYAN_START, svgSymbols, COLOR_END)
     return svgSymbols
   } catch (err) {
     console.error("svgSymbols", CYAN_START, err.message, COLOR_END)
@@ -104,7 +106,7 @@ Metalsmith(".")
   .destination("./dist")
   .clean(isProduction)
   .env("NODE_ENV", process.env.NODE_ENV)
-  .env("DEBUG", process.env.DEBUG)
+  .env("DEBUG", true)
   .metadata({
     version,
     basePath,
@@ -142,15 +144,15 @@ Metalsmith(".")
   )
   .use(layouts(templateConfig))
   .use(
-    assets({
+    staticFiles({
       source: "src/assets/",
       destination: "assets/"
     })
   )
   .use(
-    assets({
+    staticFiles({
       source: "src/assets-root/",
-      destination: ""
+      destination: "."
     })
   )
   .use(when(isProduction, htmlMinifier()))

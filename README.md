@@ -20,7 +20,7 @@ A not that often seen template language is used here.
 
 Some custom filters are set up in `metalsmith.mjs`
 
-Use `{{ item | dump }}` for viewing objects.
+Use `{{ item | dump }}` for viewing objects. But seems to not work everywhere.
 
 ### Serve
 
