@@ -1,6 +1,71 @@
 {
   "list": [
     {
+      "text": "about forbidden request headers",
+      "url": "https://macarthur.me/posts/forbidden-request-headers/",
+      "appendix": "from Alex MacArthur"
+    },
+    {
+      "text": "how to do an undo-feature",
+      "url": "https://blog.julik.nl/2025/03/a-tiny-undo-stack",
+      "appendix": "from  Julik Tarkhanov",
+      "tags": "JS"
+    },
+    {
+      "text": "why to count on web standards in frontend",
+      "url": "https://polotek.net/posts/the-frontend-treadmill/",
+      "appendix": "from Marco Rogers"
+    },
+    {
+      "text": "about Node version managers",
+      "url": "https://pavel-romanov.com/5-node-version-managers-compared-which-is-right-for-you",
+      "appendix": "from Pavel Romanov",
+      "tags": "nodeJS"
+    },
+    {
+      "text": "about archiving data for 100 years",
+      "url": "https://lil.law.harvard.edu/century-scale-storage/",
+      "appendix": "from Maxwell Neely-Cohen",
+      "tags": "must-read"
+    },
+    {
+      "text": "about your brain at work",
+      "url": "https://minds.md/zakirullin/cognitive",
+      "appendix": "from Artem Zakirullin",
+      "tags": "must-read"
+    },
+    {
+      "text": "why not to use tailwind!",
+      "url": "https://sancho.dev/blog/tailwind-and-design-systems",
+      "appendix": "from David Sancho",
+      "tags": "CSS"
+    },
+    {
+      "text": "about asking an LLM to improve itself",
+      "url": "https://minimaxir.com/2025/01/write-better-code/",
+      "appendix": "from Max Woolf"
+    },
+    {
+      "text": "about LLMs in 2024",
+      "url": "https://simonwillison.net/2024/Dec/31/llms-in-2024/",
+      "appendix": "from Simon Willison"
+    },
+    {
+      "text": "about another versioning apporach",
+      "url": "https://antfu.me/posts/epoch-semver",
+      "appendix": "from Anthony Fu"
+    },
+    {
+      "text": "about how core Git developers configure Git",
+      "url": "https://blog.gitbutler.com/how-git-core-devs-configure-git/",
+      "appendix": "from Scott Chacon"
+    },
+    {
+      "text": "about CSS overflow clipping",
+      "url": "https://ishadeed.com/article/overflow-clip/",
+      "appendix": "from Ahmad Shadeed"
+    },
+    {
       "text": "about a tool for serverless with state",
       "url": "https://sunilpai.dev/posts/the-future-of-serverless/",
       "appendix": "from Sunil Pai"
