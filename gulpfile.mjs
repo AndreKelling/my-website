@@ -116,19 +116,19 @@ const imagesRoot = () => {
     .pipe(gulp.dest(imageDirs.dist))
 }
 const imagesPreview = (done) =>
-  exec(`node image-resize.js ${imageDirs.srcPreviews} ${imageDirs.distPreviews} 170`, (err, stdout, stderr) => {
+  exec(`node image-resize.mjs ${imageDirs.srcPreviews} ${imageDirs.distPreviews} 170`, (err, stdout, stderr) => {
     console.log(stdout)
     console.log(stderr)
     done(err)
   })
 const imagesContentResize444 = (done) =>
-  exec(`node image-resize.js ${imageDirs.srcContent} ${imageDirs.distContent} 444 -md`, (err, stdout, stderr) => {
+  exec(`node image-resize.mjs ${imageDirs.srcContent} ${imageDirs.distContent} 444 -md`, (err, stdout, stderr) => {
     console.log(stdout)
     console.log(stderr)
     done(err)
   })
 const imagesContentResize888 = (done) =>
-  exec(`node image-resize.js ${imageDirs.srcContent} ${imageDirs.distContent} 888 -lg`, (err, stdout, stderr) => {
+  exec(`node image-resize.mjs ${imageDirs.srcContent} ${imageDirs.distContent} 888 -lg`, (err, stdout, stderr) => {
     console.log(stdout)
     console.log(stderr)
     done(err)

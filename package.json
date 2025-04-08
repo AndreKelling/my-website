@@ -43,6 +43,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^7.0.6",
     "dotenv": "^16.4.7",
+    "glob": "^11.0.1",
     "gulp": "^5.0.0",
     "gulp-imagemin": "^9.1.0",
     "gulp-noop": "^1.0.1",

@@ -7,8 +7,8 @@ export const cssFilePath = `${srcAssetsDir}style.css`
 export const jsFilePath = `${srcAssetsDir}main.js`
 export const imageDirs = {
   src: `${srcDir}images-original/*.{jpg,png,svg}`,
-  srcPreviews: `${srcDir}images-original/previews`, // preserve path for glob in image-resize.js
-  srcContent: `${srcDir}images-original/content`, // preserve path for glob in image-resize.js
+  srcPreviews: `${srcDir}images-original/previews`, // preserve path for glob in image-resize.mjs
+  srcContent: `${srcDir}images-original/content`, // preserve path for glob in image-resize.mjs
   dist: `${srcAssetsDir}images`,
   distPreviews: `${srcAssetsDir}images/previews`,
   distContent: `${srcAssetsDir}images/content`
