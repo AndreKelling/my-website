@@ -30,7 +30,7 @@ glob(`${dir}/**/*.{jpg,png}`, (err, files) => {
           console.log(`successfully compressed ${inputFile} to ${info.format} in size ${info.width}px`);
         } else {
           throw err
-         }
+        }
       });
   }
 }).catch(err => console.log(err));

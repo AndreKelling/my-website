@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import { exec } from "node:child_process";
 import gulp from "gulp";
-import imagemin from "gulp-imagemin";
+import imagemin from "imagemin";
 import svgmin from "gulp-svgmin";
 import svgSymbols from "gulp-svg-symbols";
 import imageminJpegRecompress from "imagemin-jpeg-recompress";
@@ -96,24 +96,19 @@ export const stylelint = (done) => {
 }
 
 /** images * */
-const imagesRoot = () => {
-  return gulp
-    .src(imageDirs.src)
-    .pipe(imagemin(
-      [
-        imageminJpegRecompress({
-          loops: 4,
-          min: 50,
-          max: 95,
-          quality: "high"
-        }),
-        imageminPngquant()
-      ],
-      {
-        verbose: true
-      }
-    ))
-    .pipe(gulp.dest(imageDirs.dist))
+const imagesRoot = async () => {
+  await imagemin([imageDirs.src], {
+    destination: imageDirs.dist,
+    plugins: [
+      imageminJpegRecompress({
+        loops: 4,
+        min: 50,
+        max: 95,
+        quality: "high"
+      }),
+      imageminPngquant()
+    ],
+  });
 }
 const imagesPreview = (done) =>
   exec(`node image-resize.mjs ${imageDirs.srcPreviews} ${imageDirs.distPreviews} 170`, (err, stdout, stderr) => {
