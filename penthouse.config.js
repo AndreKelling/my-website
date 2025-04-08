@@ -1,6 +1,6 @@
 const penthouse = require("penthouse")
 const fs = require("fs")
-const { criticalCssPath, distDir, cssFilePath, browserSyncPort } = require("./config")
+const { criticalCssPath, distDir, cssFilePath, browserSyncPort } = require("./config.mjs")
 
 module.exports = penthouse({
   url: `http://localhost:${browserSyncPort}/`,

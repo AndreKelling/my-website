@@ -1,28 +1,31 @@
-const fs = require("fs")
-const { exec } = require("child_process")
-const gulp = require("gulp")
-const imagemin = require("gulp-imagemin")
-const svgmin = require("gulp-svgmin")
-const svgSymbols = require("gulp-svg-symbols")
-const imageminJpegRecompress = require("imagemin-jpeg-recompress")
-const imageminPngquant = require("imagemin-pngquant")
+import fs from "node:fs";
+import { exec } from "node:child_process";
+import gulp from "gulp";
+import imagemin from "gulp-imagemin";
+import svgmin from "gulp-svgmin";
+import svgSymbols from "gulp-svg-symbols";
+import imageminJpegRecompress from "imagemin-jpeg-recompress";
+import imageminPngquant from "imagemin-pngquant";
 
-const production = process.env.NODE_ENV === "production"
+const production = process.env.NODE_ENV === "production";
 // const production = false;
 
-const browserify = require("browserify")
-const babelify = require("babelify")
-const source = require("vinyl-source-stream")
-const buffer = require("vinyl-buffer")
-const uglify = require("gulp-uglify")
-const sass = require("gulp-sass")(require("sass"))
-const sourcemaps = require("gulp-sourcemaps")
-const autoprefixer = require("autoprefixer")
-const postcss = require("gulp-postcss")
-const cssnano = require("cssnano")
-const noop = require("gulp-noop")
-const browserSync = require("browser-sync").create()
-const { srcLayoutsDir, criticalCssPath, browserSyncPort, srcDir, srcAssetsRootDir, srcAssetsDir, imageDirs } = require("./config")
+import browserify from "browserify";
+import babelify from "babelify";
+import source from "vinyl-source-stream";
+import buffer from "vinyl-buffer";
+import uglify from "gulp-uglify";
+import * as dartSass from 'sass'
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
+import sourcemaps from "gulp-sourcemaps";
+import autoprefixer from "autoprefixer";
+import postcss from "gulp-postcss";
+import cssnano from "cssnano";
+import noop from "gulp-noop";
+import browserSync from "browser-sync";
+const bs = browserSync.create();
+import { srcLayoutsDir, criticalCssPath, browserSyncPort, srcDir, srcAssetsRootDir, srcAssetsDir, imageDirs } from "./config.mjs";
 
 const svgOriginalFiles = `${srcDir}svg-original/**/*`
 const outputDir = srcAssetsDir
@@ -47,7 +50,7 @@ const paths = {
 
 /** JS * */
 
-const scripts = () =>
+export const scripts = () =>
   browserify({
     entries: [paths.scripts.entries],
     transform: [
@@ -65,8 +68,6 @@ const scripts = () =>
     .pipe(!production ? sourcemaps.write(".") : noop())
     .pipe(gulp.dest(outputDir))
 
-exports.scripts = scripts
-
 /** CSS * */
 
 const postCssPlugins = [
@@ -77,7 +78,7 @@ const postCssPlugins = [
 ].filter(Boolean)
 
 // CSS needs to go after svg icons, so it can use the svg icons scss
-const css = () =>
+export const css = () =>
   gulp
     .src(paths.styles.src)
     .pipe(!production ? sourcemaps.init({ loadMaps: true }) : noop())
@@ -86,17 +87,13 @@ const css = () =>
     .pipe(!production ? sourcemaps.write(".") : noop())
     .pipe(gulp.dest(srcAssetsDir))
 
-exports.css = css
-
-const stylelint = (done) => {
+export const stylelint = (done) => {
   exec(`stylelint ${paths.styles.watchSrc}`, (err, stdout, stderr) => {
     console.log(stdout)
     console.log(stderr)
     done(err)
   })
 }
-
-exports.stylelint = stylelint
 
 /** images * */
 const imagesRoot = () => {
@@ -138,18 +135,17 @@ const imagesContentResize888 = (done) =>
   })
 
 // parallel
-const images = gulp.series(
+export const images = gulp.series(
   imagesRoot,
   imagesPreview,
   imagesContentResize444,
   imagesContentResize888
 )
-exports.images = images
 
 /** svg symbols * */
 
 // SVG icons needs to go before CSS, so it can use the svg icons scss
-const svgsymbols = () =>
+export const svgsymbols = () =>
   gulp
     .src(svgOriginalFiles)
     .pipe(svgmin())
@@ -166,8 +162,6 @@ const svgsymbols = () =>
     )
     .pipe(gulp.dest(srcLayoutsDir))
 
-exports.svgsymbols = svgsymbols
-
 /**
  * metalsmith build
  *
@@ -176,7 +170,7 @@ exports.svgsymbols = svgsymbols
  * */
 
 const buildMetalsmith = (done) => {
-  exec("node metalsmith.js", (err, stdout, stderr) => {
+  exec("node metalsmith.mjs", (err, stdout, stderr) => {
     console.log(stdout)
     console.log(stderr)
     done(err)
@@ -201,7 +195,7 @@ const removeCriticalCss = (done) => {
 }
 
 const criticalCss = (done) => {
-  exec("env DEBUG='penthouse,penthouse:*' node penthouse.config.js", (err, stdout, stderr) => {
+  exec("env DEBUG='penthouse,penthouse:*' node penthouse.config.mjs", (err, stdout, stderr) => {
     console.log(stdout)
     console.log(stderr)
     done(err)
@@ -209,7 +203,7 @@ const criticalCss = (done) => {
 }
 
 const serve = (done) => {
-  browserSync.init({
+  bs.init({
     server: {
       baseDir: "./dist"
     },
@@ -219,16 +213,15 @@ const serve = (done) => {
   done()
 }
 const serveStop = (done) => {
-  browserSync.exit()
+  bs.exit()
   done()
 }
 
 /** build * */
 
-const build = gulp.series(gulp.parallel(scripts, images, svgsymbols), css, buildMetalsmith)
-exports.build = build
+export const build = gulp.series(gulp.parallel(scripts, images, svgsymbols), css, buildMetalsmith)
 
-const buildProd = gulp.series(
+export const buildProd = gulp.series(
   (done) => {
     console.log("gulp production:", production)
     done()
@@ -241,11 +234,9 @@ const buildProd = gulp.series(
   build
 )
 
-exports.buildProd = buildProd
-
 /** watch * */
 
-const watch = () => {
+export const watch = () => {
   build()
 
   gulp.watch(paths.site, buildMetalsmith)
@@ -257,7 +248,3 @@ const watch = () => {
 
   gulp.watch([imageDirs.src, imageDirs.srcPreviews, imageDirs.srcContent], gulp.series(images, buildMetalsmith))
 }
-
-exports.watch = watch
-
-exports.default = watch

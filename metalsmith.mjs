@@ -1,18 +1,21 @@
-require("dotenv").config()
+import 'dotenv/config';
 
-const Metalsmith = require("metalsmith")
-const markdown = require("@metalsmith/markdown")
-const layouts = require("@metalsmith/layouts")
-const drafts = require("@metalsmith/drafts")
-const permalinks = require("@metalsmith/permalinks")
-const metadata = require("@metalsmith/metadata")
-const when = require("metalsmith-if")
-const htmlMinifier = require("metalsmith-html-minifier")
-const assets = require("metalsmith-static-files")
-const collections = require("@metalsmith/collections")
-const { version } = require("./package.json")
-const { cssFilePath, criticalCssPath, jsFilePath, svgSymbolsPath } = require("./config")
-const fs = require("fs");
+import Metalsmith from "metalsmith";
+import markdown from "@metalsmith/markdown";
+import layouts from "@metalsmith/layouts";
+import drafts from "@metalsmith/drafts";
+import permalinks from "@metalsmith/permalinks";
+import metadata from "@metalsmith/metadata";
+import when from "metalsmith-if";
+import htmlMinifier from "metalsmith-html-minifier";
+import assets from "metalsmith-static-files";
+import collections from "@metalsmith/collections";
+import { cssFilePath, criticalCssPath, jsFilePath, svgSymbolsPath } from "./config.mjs";
+import fs from "node:fs";
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+const { version } = require('./package.json');
 
 const isProduction = process.env.NODE_ENV === "production"
 const basePath = process.env.BASE_PATH || ""
@@ -94,7 +97,7 @@ const loadSvgSymbols = () => {
 }
 
 console.log("metalsmith production:", isProduction)
-Metalsmith(__dirname)
+Metalsmith('.')
   .source("./src/content")
   .destination("./dist")
   .clean(isProduction)
