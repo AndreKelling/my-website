@@ -5,7 +5,7 @@ createdAt: 2010-10-26 04:39:33
 
 bodyClass: "about-page"
 title: "& about me?"
-subtitle: "Check me up also on <a href='https://www.xing.com/profile/Andre_Kelling' rel='noreferrer noopener' target='_blank' title='me on Xing'>Xing</a> and <a href='https://www.linkedin.com/in/andr%C3%A9-kelling/' rel='noreferrer noopener' target='_blank' title='me on LinkedIn'>LinkedIn</a> networks"  
+subtitle: "Check me up also on <a href='https://www.linkedin.com/in/andr%C3%A9-kelling/' rel='noreferrer noopener' target='_blank' title='me on LinkedIn'>LinkedIn</a>"  
   
 seo:
   title: About
@@ -19,7 +19,7 @@ Please refer to my CV for a completer list of projects, frameworks and tech-skil
 <h2>Vita:</h2>
 
 <ul>
-  <li>since Jan. 2025</li>
+  <li>Jan. 2025 — Aug. 2025</li>
 	<li>FrontEnd Development</li>
 	<li><a href="https://kriegerdigital.de/" rel="noreferrer noopener" target="_blank" title="kriegerdigital.de website">KIS GmbH & Co. KG</a></li>
 	<li>Berlin —&gt; Schönefeld</li>
