@@ -1,6 +1,95 @@
 {
   "list": [
     {
+      "text": "when and how to use animations",
+      "url": "https://emilkowal.ski/ui/you-dont-need-animations",
+      "appendix": "from Emil Kowalski",
+      "tags": ["animations", "UI/UX"]
+    },
+    {
+      "text": "all better without JS",
+      "url": "https://lyra.horse/blog/2025/08/you-dont-need-js/",
+      "appendix": "from Lyra Rebane",
+      "tags": ["JavaScript", "CSS", "security", "animations", "performance"]
+    },
+    {
+      "text": "about semantic search (i worked on the prototype app)",
+      "url": "https://medium.com/datev-techblog/gesucht-gefunden-semantische-suchmaschinen-af0f6f507fcf",
+      "appendix": "from Christoph Stocker",
+      "tags": ["LLM"]
+    },
+    {
+      "text": "course to learn MCP servers",
+      "url": "https://learnmcp.examples.workers.dev/",
+      "appendix": "from Cloudflare",
+      "tags": ["howTo"]
+    },
+    {
+      "text": "about Lean coding language and math",
+      "url": "https://overreacted.io/the-math-is-haunted/",
+      "appendix": "from Dan Abramov"
+    },
+    {
+      "text": "about algorithm performance",
+      "url": "https://samwho.dev/big-o/",
+      "appendix": "from samwho",
+      "tags": ["performance"]
+    },
+    {
+      "text": "about coding agent onboarding",
+      "url": "https://www.fuzzycomputer.com/posts/onboarding",
+      "appendix": "from Matt Holden",
+      "tags": ["LLM"]
+    },
+    {
+      "text": "about currentScript document prop",
+      "url": "https://macarthur.me/posts/current-script/",
+      "appendix": "from Alex MacArthur",
+      "tags": ["JavaScript"]
+    },
+    {
+      "text": "a comparison between Oxlint and Biome",
+      "url": "https://www.solberg.is/fast-type-aware-linting",
+      "appendix": "from Jökull Sólberg",
+      "tags": ["lint"]
+    },
+    {
+      "text": "about performance optimization in React",
+      "url": "https://tkdodo.eu/blog/the-useless-use-callback",
+      "appendix": "from TkDodo",
+      "tags": ["React", "performance"]
+    },
+    {
+      "text": "About image compression with human readable text",
+      "url": "https://spectrum.ieee.org/forget-jpeg-how-would-a-person-compress-a-picture",
+      "appendix": "By Irena Hwang, Shubham Chandak, Kedar Tatwawadi and Tsachy Weissman",
+      "tags": ["images", "must-read"]
+    },
+    {
+      "text": "About the JPEG image format",
+      "url": "https://spectrum.ieee.org/jpeg-image-format-history",
+      "appendix": "from Ernie Smith",
+      "tags": ["images"]
+    },
+    {
+      "text": "About eslint history",
+      "url": "https://eslint.org/blog/2025/05/eslint-v9.0.0-retrospective/",
+      "appendix": "from Nicholas C. Zakas",
+      "tags": ["lint"]
+    },
+    {
+      "text": "About categorizing node packages",
+      "url": "https://antfu.me/posts/categorize-deps",
+      "appendix": "from Anthony Fu",
+      "tags": ["NodeJS"]
+    },
+    {
+      "text": "Why JSON has commas",
+      "url": "https://simonsafar.com/2025/json_with_no_commas/",
+      "appendix": "from Simon Safar",
+      "tags": ["JSON"]
+    },
+    {
       "text": "About forbidden request headers",
       "url": "https://macarthur.me/posts/forbidden-request-headers/",
       "appendix": "from Alex MacArthur"
@@ -107,7 +196,8 @@
     {
       "text": "About CSS selector performance",
       "url": "https://www.trysmudford.com/blog/i-spent-a-day-making-the-website-go-2ms-faster/",
-      "appendix": "from Trys Mudford"
+      "appendix": "from Trys Mudford",
+      "tags": ["CSS", "performance"]
     },
     {
       "text": "Why to not trust the Rust hype",
@@ -157,7 +247,8 @@
     {
       "text": "About Discord optimizng its performance",
       "url": "https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent",
-      "appendix": "from Austin Whyte"
+      "appendix": "from Austin Whyte",
+      "tags": ["performance"]
     },
     {
       "text": "About JS benchmarking with tachometer",
@@ -182,7 +273,8 @@
     {
       "text": "How Google handles JavaScript throughout the indexing process",
       "url": "https://vercel.com/blog/how-google-handles-javascript-throughout-the-indexing-process",
-      "appendix": "from MERJ"
+      "appendix": "from MERJ",
+      "tags": ["JavaScript"]
     },
     {
       "text": "Calculate breakpoints numbers with pure CSS",
@@ -202,7 +294,8 @@
     {
       "text": "About performance on DOM nesting",
       "url": "https://frontendatscale.com/blog/how-deep-is-your-dom/",
-      "appendix": "from Maxi Ferreira"
+      "appendix": "from Maxi Ferreira",
+      "tags": ["HTML", "performance"]
     },
     {
       "text": "About speculation rules to preload certain pages",
