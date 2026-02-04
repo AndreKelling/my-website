@@ -27,12 +27,13 @@ p {
 }
 
 a {
-	color: color.adjust(colors.$c-green, $lightness: -10);
+	color: color.adjust(colors.$c-green, $lightness: -10%);
 	transition: color 200ms ease-in;
 
 	&:hover,
 	&:focus {
 		color: colors.$c-orange;
+		color: color(display-p3 1 0.63 0);
 	}
 }
 
