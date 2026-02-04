@@ -1,6 +1,132 @@
 {
   "list": [
     {
+      "text": "About one who rebuild git from scratch",
+      "url": "https://tonystr.net/blog/git_immitation",
+      "appendix": "from Tony   Strømsnæs",
+      "tags": ["Git"]
+    },
+    {
+      "text": "How searching on web should be different",
+      "url": "https://blog.kagi.com/waiting-dawn-search",
+      "appendix": "from Vladimir Prelovac and Raghu Murthi",
+      "tags": ["internet"]
+    },
+    {
+      "text": "About working with array in JavaScript",
+      "url": "https://allthingssmitty.com/2026/01/12/stop-turning-everything-into-arrays-and-do-less-work-instead/",
+      "appendix": "from Matt Smith",
+      "tags": ["JS", "howTo"]
+    },
+    {
+      "text": "Collection of dark patterns",
+      "url": "https://da-pa.ch/",
+      "appendix": "from Stiftung Mercator",
+      "tags": ["internet"]
+    },
+    {
+      "text": "Website with lots of trends and data around websites",
+      "url": "https://almanac.httparchive.org/en/2025/",
+      "appendix": "from the HTTP Archive",
+      "tags": ["internet"]
+    },
+    {
+      "text": "About a draft for an AI URI scheme",
+      "url": "https://www.ietf.org/archive/id/draft-sogomonian-ai-uri-scheme-01.html",
+      "appendix": "from A. Sogomonian",
+      "tags": ["LLM"]
+    },
+    {
+      "text": "About that JSDoc is actually TypeScript",
+      "url": "https://culi.bearblog.dev/jsdoc-is-typescript/",
+      "appendix": "from Culi",
+      "tags": ["TypeScript", "JSDoc"]
+    },
+    {
+      "text": "About your right to forget learned knowledge",
+      "url": "https://kerrick.blog/articles/2025/confessions-of-a-software-developer-no-more-self-censorship/",
+      "appendix": "from Kerrick Long",
+      "tags": ["Learning"]
+    },
+    {
+      "text": "A tool for linting writing",
+      "url": "https://vale.sh/",
+      "appendix": "from Joseph Kato",
+      "tags": ["Tooling"]
+    },
+    {
+      "text": "Some practical tips for animations",
+      "url": "https://emilkowal.ski/ui/7-practical-animation-tips",
+      "appendix": "from Emil Kowalski",
+      "tags": ["animations", "UI/UX", "howTo"]
+    },
+    {
+      "text": "About sanitization of HTML when put via JS",
+      "url": "https://olliewilliams.xyz/blog/sanitizer/",
+      "appendix": "from Ollie Williams",
+      "tags": ["HTML", "JS"]
+    },
+    {
+      "text": "About letting the browser do the work",
+      "url": "https://blog.jim-nielsen.com/2025/more-control-equals-less-performance/",
+      "appendix": "from Jim Nielsen",
+      "tags": ["performance"]
+    },
+    {
+      "text": "About a frontend maximalism concept",
+      "url": "https://www.natemeyvis.com/front-end-maximalism/",
+      "appendix": "from Nate Meyvis",
+      "tags": ["frontend"]
+    },
+    {
+      "text": "About AI as normal technology",
+      "url": "https://knightcolumbia.org/content/ai-as-normal-technology",
+      "appendix": "from Arvind Narayanan & Sayash Kapoor",
+      "tags": ["LLM", "must-read"]
+    },
+    {
+      "text": "About the country that broke Kotlin",
+      "url": "https://sam-cooper.medium.com/the-country-that-broke-kotlin-84bdd0afb237",
+      "appendix": "from Sam Cooper",
+      "tags": ["Kotlin", "Bug"]
+    },
+    {
+      "text": "About to think in sprints (DE podcast)",
+      "url": "https://www.deutschlandfunkkultur.de/neurowissenschaftler-henning-beck-unser-gehirn-ist-nicht-perfekt-das-ist-gut-so-100.html",
+      "appendix": "from Henning Beck",
+      "tags": ["podcast"]
+    },
+    {
+      "text": "About vibe engineering",
+      "url": "https://simonwillison.net/2025/Oct/7/vibe-engineering/",
+      "appendix": "from Simon Willison",
+      "tags": ["LLM"]
+    },
+    {
+      "text": "About the AT protocol ",
+      "url": "https://overreacted.io/where-its-at/",
+      "appendix": "from Dan Abramov",
+      "tags": ["AT protocol"]
+    },
+    {
+      "text": "About coding with AI",
+      "url": "https://newsletter.posthog.com/p/avoid-these-ai-coding-mistakes",
+      "appendix": "from Ian Vanagas",
+      "tags": ["LLM"]
+    },
+    {
+      "text": "About using vanilla HTML and CSS",
+      "url": "https://olliewilliams.xyz/blog/html-renaissance/",
+      "appendix": "from Ollie Williams",
+      "tags": ["HTML", "CSS"]
+    },
+    {
+      "text": "About hands on performance optimization",
+      "url": "https://jacobwinters.com/kagi-assistant-optimization/",
+      "appendix": "from Jacob Winters",
+      "tags": ["performance"]
+    },
+    {
       "text": "when and how to use animations",
       "url": "https://emilkowal.ski/ui/you-dont-need-animations",
       "appendix": "from Emil Kowalski",
@@ -13,7 +139,7 @@
       "tags": ["JavaScript", "CSS", "security", "animations", "performance"]
     },
     {
-      "text": "about semantic search (i worked on the prototype app)",
+      "text": "About semantic search (i worked on the prototype app)",
       "url": "https://medium.com/datev-techblog/gesucht-gefunden-semantische-suchmaschinen-af0f6f507fcf",
       "appendix": "from Christoph Stocker",
       "tags": ["LLM"]
@@ -25,24 +151,24 @@
       "tags": ["howTo"]
     },
     {
-      "text": "about Lean coding language and math",
+      "text": "About Lean coding language and math",
       "url": "https://overreacted.io/the-math-is-haunted/",
       "appendix": "from Dan Abramov"
     },
     {
-      "text": "about algorithm performance",
+      "text": "About algorithm performance",
       "url": "https://samwho.dev/big-o/",
       "appendix": "from samwho",
       "tags": ["performance"]
     },
     {
-      "text": "about coding agent onboarding",
+      "text": "About coding agent onboarding",
       "url": "https://www.fuzzycomputer.com/posts/onboarding",
       "appendix": "from Matt Holden",
       "tags": ["LLM"]
     },
     {
-      "text": "about currentScript document prop",
+      "text": "About currentScript document prop",
       "url": "https://macarthur.me/posts/current-script/",
       "appendix": "from Alex MacArthur",
       "tags": ["JavaScript"]
@@ -54,7 +180,7 @@
       "tags": ["lint"]
     },
     {
-      "text": "about performance optimization in React",
+      "text": "About performance optimization in React",
       "url": "https://tkdodo.eu/blog/the-useless-use-callback",
       "appendix": "from TkDodo",
       "tags": ["React", "performance"]
@@ -341,7 +467,8 @@
       "text": "The quiet, pervasive devaluation of frontend",
       "url": "https://joshcollinsworth.com/blog/devaluing-frontend",
       "appendix": "from Josh Collinsworth"
-    },{
+    },
+    {
       "text": "Why TypeScript doesn't include a throws keyword",
       "url": "https://www.learningtypescript.com/articles/why-typescript-doesnt-include-a-throws-keyword",
       "appendix": "from Josh Goldberg"
@@ -359,7 +486,8 @@
     {
       "text": "About JSDoc for Typing JS without TypeScript",
       "url": "https://alexharri.com/blog/jsdoc-as-an-alternative-typescript-syntax?ck_subscriber_id=2442841568",
-      "appendix": "from Alex Harri"
+      "appendix": "from Alex Harri",
+      "tags": ["TypeScript", "JSDoc"]
     },
     {
       "text": "A comparison about CSS modules and CSS in JS",
