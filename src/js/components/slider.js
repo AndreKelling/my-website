@@ -1,27 +1,27 @@
 class Slider extends HTMLElement {
-  static observedAttributes = ["color", "size"];
+  static observedAttributes = ["color", "size"]
 
   constructor() {
-    super();
+    super()
     this.backgroundColours = ["#A0B882", "#B648F1", "#E8AD00", "#1D1D1B"]
     this.attrDataImageClicked = "data-image-clicked"
   }
 
   connectedCallback() {
-    console.log("Custom element added to page.");
-    this.thumbnailNav();
+    console.log("Custom element added to page.")
+    this.thumbnailNav()
   }
 
   disconnectedCallback() {
-    console.log("Custom element removed from page.");
+    console.log("Custom element removed from page.")
   }
 
   adoptedCallback() {
-    console.log("Custom element moved to new page.");
+    console.log("Custom element moved to new page.")
   }
 
-  attributeChangedCallback(name, oldValue, newValue) {
-    console.log(`Attribute ${name} has changed.`);
+  attributeChangedCallback(name, _oldValue, _newValue) {
+    console.log(`Attribute ${name} has changed.`)
   }
 
   thumbnailNav() {

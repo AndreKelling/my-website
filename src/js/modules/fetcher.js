@@ -90,7 +90,7 @@ const Fetcher = (() => {
       })
   }
 
-  const _getContent = (html, url) => {
+  const _getContent = (html, _url) => {
     const parser = new DOMParser()
     const content = parser.parseFromString(html, "text/html")
     const newMain = content.querySelector("#main").innerHTML

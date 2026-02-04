@@ -1,18 +1,18 @@
 import "dotenv/config"
 
-import Metalsmith from "metalsmith"
-import markdown from "@metalsmith/markdown"
-import layouts from "@metalsmith/layouts"
-import drafts from "@metalsmith/drafts"
-import permalinks from "@metalsmith/permalinks"
-import metadata from "@metalsmith/metadata"
-import when from "metalsmith-if"
-import htmlMinifier from "metalsmith-html-minifier"
-import staticFiles from "metalsmith-static-files"
-import collections from "@metalsmith/collections"
-import { cssFilePath, criticalCssPath, jsFilePath, svgSymbolsPath, srcLayoutsDir } from "./config.mjs"
 import fs from "node:fs"
 import { createRequire } from "node:module"
+import collections from "@metalsmith/collections"
+import drafts from "@metalsmith/drafts"
+import layouts from "@metalsmith/layouts"
+import markdown from "@metalsmith/markdown"
+import metadata from "@metalsmith/metadata"
+import permalinks from "@metalsmith/permalinks"
+import Metalsmith from "metalsmith"
+import htmlMinifier from "metalsmith-html-minifier"
+import when from "metalsmith-if"
+import staticFiles from "metalsmith-static-files"
+import { criticalCssPath, cssFilePath, jsFilePath, srcLayoutsDir, svgSymbolsPath } from "./config.mjs"
 
 const require = createRequire(import.meta.url)
 const { version } = require("./package.json")
@@ -26,7 +26,12 @@ const COLOR_END = "\x1b[0m"
 const spaceToDash = (string) => string.replace(/\s+/g, "-")
 const condenseTitle = (string) => string.toLowerCase().replace(/\s+/g, "")
 const UTCdate = (date) => date.toUTCString("M d, yyyy")
-const blogDate = (date) => date.toLocaleString("en-US", { year: "numeric", month: "long", day: "numeric" })
+const blogDate = (date) =>
+  date.toLocaleString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric"
+  })
 const trimSlashes = (string) => string.replace(/(^\/)|(\/$)/g, "")
 const pathWithoutIndexHtml = (string) => string.replace(/index\.html$/, "")
 
@@ -112,8 +117,8 @@ Metalsmith(".")
     basePath,
     imagePath: `${basePath}/assets/images/`,
     faviconVersion: "QEMO20KRr9",
-    styleVersion: "20240327",
-    scriptVersion: "20240327",
+    styleVersion: "20260204",
+    scriptVersion: "20260204",
     svgSymbols: loadSvgSymbols(),
     criticalCss: loadCriticalCss(),
     cssFilesize: getFilesize(cssFilePath),
