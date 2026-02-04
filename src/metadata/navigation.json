@@ -1,11 +1,11 @@
 {
   "menu": [
     {
-      "label": "Web has no",
+      "label": "Web",
       "url": "/works/"
     },
     {
-      "label": "&",
+      "label": "& me",
       "url": "/about/"
     }
   ]
