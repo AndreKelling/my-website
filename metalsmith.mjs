@@ -23,8 +23,8 @@ const CYAN_START = "\x1b[36m"
 const COLOR_END = "\x1b[0m"
 
 // functions to extend Nunjucks environment
-const spaceToDash = (string) => string.replace(/\s+/g, "-")
-const condenseTitle = (string) => string.toLowerCase().replace(/\s+/g, "")
+const spaceToDash = (value = "") => String(value).replace(/\s+/g, "-")
+const condenseTitle = (value = "") => String(value).toLowerCase().replace(/\s+/g, "")
 const UTCdate = (date) => date.toUTCString("M d, yyyy")
 const blogDate = (date) =>
   date.toLocaleString("en-US", {
@@ -32,8 +32,8 @@ const blogDate = (date) =>
     month: "long",
     day: "numeric"
   })
-const trimSlashes = (string) => string.replace(/(^\/)|(\/$)/g, "")
-const pathWithoutIndexHtml = (string) => string.replace(/index\.html$/, "")
+const trimSlashes = (value = "") => String(value).replace(/(^\/)|(\/$)/g, "")
+const pathWithoutIndexHtml = (value = "") => String(value).replace(/index\.html$/, "")
 
 const formatBytes = (bytes) => {
   if (bytes < 1024) {
