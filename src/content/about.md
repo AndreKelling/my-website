@@ -1,6 +1,6 @@
 ---
 layout: about-page.njk
-date: 2025-01-17 20:38:00
+date: 2026-02-04 20:46:00
 createdAt: 2010-10-26 04:39:33
 
 bodyClass: "about-page"
@@ -13,7 +13,7 @@ seo:
 ---
 
 
-Please refer to my CV for a completer list of projects, frameworks and tech-skills.
+Please refer to my CV for a complete list of projects, frameworks and tech-skills with extensive description about each role.
 
 <div class="twocol fleft">
 <h2>Vita:</h2>
