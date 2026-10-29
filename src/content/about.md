@@ -19,7 +19,7 @@ Please refer to my CV for a complete list of projects, frameworks and tech-skill
 <h2>Vita:</h2>
 
 <ul>
-  <li>Jan. 2025 — Aug. 2025</li>
+  <li>Jan. 2025 — Apr. 2026</li>
 	<li>FrontEnd Development</li>
 	<li><a href="https://kriegerdigital.de/" rel="noreferrer noopener" target="_blank" title="kriegerdigital.de website">KIS GmbH & Co. KG</a></li>
 	<li>Berlin —&gt; Schönefeld</li>
