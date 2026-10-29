@@ -33,7 +33,6 @@ const blogDate = (date) =>
     day: "numeric"
   })
 const trimSlashes = (value = "") => String(value).replace(/(^\/)|(\/$)/g, "")
-const pathWithoutIndexHtml = (value = "") => String(value).replace(/index\.html$/, "")
 
 const formatBytes = (bytes) => {
   if (bytes < 1024) {
@@ -63,8 +62,7 @@ const templateConfig = {
       UTCdate,
       blogDate,
       trimSlashes,
-      formatBytes,
-      pathWithoutIndexHtml
+      formatBytes
     }
   }
 }

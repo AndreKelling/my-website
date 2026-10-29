@@ -12,7 +12,7 @@
       <ul class="overview-nav">
         {% for item in collections.works  %}
           <li class="overview__item">
-            <a class="overview__link" href="{{ basePath }}/{{ item.path | pathWithoutIndexHtml }}">
+            <a class="overview__link" href="{{ basePath }}/{{ item.permalink }}">
               <h3>{{ item.seo.title }}</h3>
 
               {% if item.project.previewImage %}
