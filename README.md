@@ -68,3 +68,7 @@ CSS and JS files are versioned by a query param configured in the metalsmith con
 ## Deploy
 
 - is done with GitHub actions
+
+## Issues
+
+- build tooling with babelify depends on babel v7 → migrate to newer build tooling
